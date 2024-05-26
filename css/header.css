@@ -1,0 +1,13 @@
+:root {
+    --header-background: #100f16
+}
+
+.header {
+    background-color: var(--header-background);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+}
