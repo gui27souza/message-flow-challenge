@@ -6,7 +6,7 @@ function menu() {
 
     var window_width = window.innerWidth
 
-    if (window_width > 850) {
+    if (window_width > 940) {
         return
     } 
 

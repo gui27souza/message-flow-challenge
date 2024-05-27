@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Hub</title>
 
     <link rel="stylesheet" href="css/reset.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/actions.css">
 
 </head>
 <body>
     <header class="header">
-        <img src="images/text_logo_alt.png" alt="logo de Book Hub" class="header__img">
+
+        <img src="images/text_logo_alt.png" alt="Book Hub Logo" class="header__img">
+        
         <div class="header__menu">
+
             <div class="header__menu__item" id="home-button" onclick="menu()">
                 <a href="#">
                     Home
                 </a>
             </div>
+
             <div class="header__menu__item">
                 <a href="#">
                     About
                 </a>
             </div>
+
             <div class="header__menu__item">
                 <a href="#">
                     Contact
                 </a>
             </div>
+
         </div>
     </header>
+
+    <section class="actions">
+
+        <input
+             type="text"
+             class="actions__searchbar"
+             placeholder="Look for a store..."
+        >
+
+        <div class="actions__buttons">
+
+            <div id="order" class="actions__buttons__btn">
+                <span>Order</span>
+            </div>
+
+            <div id="filter" class="actions__buttons__btn">
+                <span>Filter</span>
+            </div>
+
+        </div>
+
+    </section>
 
     <script src="js/menu.js"></script>
 </body>
