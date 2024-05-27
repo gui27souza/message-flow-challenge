@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     font-size: 62.5%;
-    font-family: monospace;
+    font-family: "Exo 2";
+
+    --main-red: #f33e3c;
+    --main-white: #fafafa;
 }
 
 html, body {
@@ -9,5 +14,5 @@ html, body {
 }
 
 body {
-    background-color: #0d0d25;
+    background-color: color-mix(in srgb, var(--main-red), black 70%);
 }
