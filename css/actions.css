@@ -24,7 +24,8 @@
     
     padding: 1.4rem;
     
-    width: 33rem;
+    width: 50%;
+    max-width: 40rem;
     height: 100%;
 
     z-index: 0;
@@ -52,7 +53,14 @@
     align-items: center;
 
     height: 100%;
-    width: 10rem;
+    width: 16rem;
+}
+
+@media screen
+and (max-width:860px) {
+    .actions__buttons__btn {
+        width: 12rem;
+    }
 }
 
 @media screen
@@ -67,6 +75,7 @@ and (max-width: 800px) {
 
     .actions__searchbar {
         width: 100%;
+        max-width: unset;
         height: 5rem;
     }
 
@@ -80,6 +89,47 @@ and (max-width: 800px) {
     }
 }
 
+@media screen
+and (max-width: 355px) {
+
+    .actions {
+        width: 85%;
+
+        margin: 3rem auto;
+    }
+
+    .actions__searchbar {
+        font-size: 2rem;
+    }
+
+    .actions__buttons__btn {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (max-width: 250px) {
+
+    .actions {
+        height: unset;
+
+        margin: 2rem auto;
+
+        padding: 1.4rem;
+        gap: 1.4rem;
+    }
+    
+    .actions__searchbar {
+        font-size: 1.6rem;
+        height: 3.6rem;
+        padding: .5rem;
+    }
+
+    .actions__buttons {
+        height: 3.6rem;
+        gap: 1.4rem;
+    }
+}
 
 
 
