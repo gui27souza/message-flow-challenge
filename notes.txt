@@ -1,0 +1,13 @@
+- ajustar font-size dos itens
+- arrumar o wrap dos itens
+- arrumar itens em telas maiores
+
+
+
+- busca de loja
+- busca de livro
+- busca de loja com livro
+- busca de livro na loja
+
+- filtros
+- ordenadores
