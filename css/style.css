@@ -6,6 +6,8 @@
 
     --main-red: #f33e3c;
     --main-white: #fafafa;
+    --dark-red: color-mix(in srgb, var(--main-red), black 70%);
+    --brown-red: color-mix(in srgb, var(--main-red), hsl(0, 0%, 2%) 90%);
 }
 
 html, body {
@@ -14,5 +16,10 @@ html, body {
 }
 
 body {
-    background-color: color-mix(in srgb, var(--main-red), black 70%);
+    background-color: var(--dark-red);
+
+    display: flex;
+    flex-flow: column;
+
+    align-items: center;
 }
