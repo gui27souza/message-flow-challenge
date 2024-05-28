@@ -10,11 +10,6 @@
     --brown-red: color-mix(in srgb, var(--main-red), hsl(0, 0%, 2%) 90%);
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
 body {
     background-color: var(--dark-red);
 

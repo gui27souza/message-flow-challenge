@@ -144,7 +144,7 @@ and (max-width: 250px) {
     }
 
     .actions__searchbar {
-        background-color: var(--main-red);
+        background-color: var(--dark-red);
         color: var(--main-white);
     }
 
@@ -153,7 +153,7 @@ and (max-width: 250px) {
     }
 
     .actions__buttons__btn {
-        background-color: var(--main-red);
+        background-color: var(--dark-red);
         color: var(--main-white);
     }
 
