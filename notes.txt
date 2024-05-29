@@ -1,8 +1,4 @@
-- ajustar font-size dos itens
-- arrumar o wrap dos itens
-- arrumar itens em telas maiores
-
-
+- página de livros na loja
 
 - busca de loja
 - busca de livro

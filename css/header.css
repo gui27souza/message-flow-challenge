@@ -60,7 +60,7 @@ and (max-width: 480px) {
         width: 100%;
     }
 
-    #home-button a::after {
+    #main-button a::after {
         content: "III";
 
         transform: rotate(90deg);
@@ -125,7 +125,7 @@ and (max-width: 940px) {
         width: 18rem;
     }
 
-    #home-button a::after {
+    #main-button a::after {
         content: "III";
 
         font-family: sans-serif;
