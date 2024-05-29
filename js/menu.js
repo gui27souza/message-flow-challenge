@@ -20,22 +20,20 @@ function menu() {
 
 function openMenu() {
 
-    for (item of all_items) {
+    for (let item of all_items) {
         item.style.display = "flex"
     }
 
     menu_is_open = 1
-
-    // document.getElementById("home-button-link::after").style.transform = "rotate(0deg)"
 }
 
 function closeMenu() {
 
-    for (item of all_items) {
+    for (let item of all_items) {
         item.style.display = "none"
     }
 
-    document.getElementById("home-button").style.display = "flex"
+    document.getElementById("main-button").style.display = "flex"
 
     menu_is_open = 0
 }
