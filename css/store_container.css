@@ -114,7 +114,7 @@ and (min-width: 340px) {
 }
 
 @media screen
-and (min-width: 580px) {
+and (min-width: 600px) {
 
     .store-container {
         flex-flow: row wrap;
@@ -131,8 +131,8 @@ and (min-width: 580px) {
         flex-flow: column;
         justify-content: space-between;
 
-        height: 26rem;
-        width: 18em;
+        height: 25rem;
+        width: 17em;
     }
 
     .store-item__text {
@@ -142,6 +142,14 @@ and (min-width: 580px) {
     .store-item__logo {
         width: 100%;
         height: unset;
+    }
+}
+
+@media screen
+and (min-width: 830px) {
+    .store-item {
+        height: 27rem;
+        width: 17rem;
     }
 }
 
