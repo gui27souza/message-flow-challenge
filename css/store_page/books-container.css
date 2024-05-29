@@ -1,0 +1,152 @@
+.book-container {
+    background-color: var(--brown-red);
+    width: 90%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+
+    margin-bottom: 3rem;
+}
+
+.book-item {
+    background-color: var(--dark-red);
+
+    box-sizing: border-box;
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.book-item__logo {
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.book-item__text {
+    display: flex;
+    flex-flow: column;
+}
+
+.book-item__logo,
+.book-item__text__item {
+    background-color: var(--main-red);
+}
+
+@media screen
+and (max-width: 355px) {
+    .book-container {
+        width: 85%;
+        padding: 1rem;
+        padding-top: 0;
+
+        gap: 1rem;
+    }
+
+    .book-item {
+        width: 100%;
+        gap: .8rem;
+    }
+
+    .book-item__logo {
+        padding: 1rem;
+    }
+
+    .book-item__text {
+        gap: .6rem;
+        font-size: 1.8rem;
+    }
+
+    .book-item__text__item {
+        padding: .4rem;
+    }
+}
+
+@media screen
+and (min-width: 356px) {
+    .book-container {
+        padding: 2rem;
+        padding-top: 0;
+
+        gap: 2rem;
+    }
+
+    .book-item {
+        padding: 1.6rem;
+        width: 100%;
+        gap: 1.2rem;
+    }
+
+    .book-item__logo {
+        padding: 1.6rem;
+    }
+
+    .book-item__text {
+        gap: .8rem;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .book-item__text__item {
+        padding: .6rem;
+    }
+}
+
+@media screen
+and (min-width: 500px) {
+    
+    .book-container {
+        flex-flow: row wrap;
+        gap: 2rem 0;
+    }
+
+    .book-container__wrapper {
+        width: 50%;
+
+        box-sizing: border-box;
+        padding: 1%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .book-item {
+        max-width: 30rem;
+    }
+}
+
+@media screen
+and (min-width: 700px) {
+    .book-container__wrapper {
+        width: 33.33%;
+    }
+}
+
+@media screen
+and (min-width: 1350px) {
+    .book-container__wrapper {
+        width: 25%;
+    }
+}
+
+@media screen
+and (min-width: 1700px) {
+    .book-container__wrapper {
+        width: 20%;
+    }
+}
+
+.reset-padding {
+    padding-top: 2rem;
+}
+
+@media screen
+and (max-width: 355px) {
+    .reset-padding {
+        padding-top: 1rem;
+    }
+}
