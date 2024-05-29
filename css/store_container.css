@@ -95,7 +95,7 @@ and (min-width: 251px) {
 }
 
 @media screen
-and (min-width: 320px) {
+and (min-width: 340px) {
 
     .store-item {
         flex-flow: row;
@@ -180,11 +180,17 @@ and (min-width: 1500px) {
 }
 
 @media screen
-and (min-width: 1700px) {
+and (min-width: 1850px) {
 
     .store-item {
         height: 20rem;
         width: 40rem;
+    }
+
+    .store-item__text__name,
+    .store-item__text__description {
+        font-size: 2.4rem;
+        font-weight: 600;
     }
 }
 

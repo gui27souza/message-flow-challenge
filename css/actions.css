@@ -1,6 +1,4 @@
 .actions {
-    background-color: rgb(0, 255, 0);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +16,6 @@
 }
 
 .actions__searchbar {
-    background-color: blueviolet;
-    
     font-size: 2.4rem;
     
     box-sizing: border-box;    
@@ -42,8 +38,6 @@
 }
 
 .actions__buttons__btn {
-    background-color: blueviolet;
-
     font-size: 2rem;
 
     display: flex;
