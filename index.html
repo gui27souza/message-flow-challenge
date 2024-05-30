@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/books-container.css">
     <link rel="stylesheet" href="css/store.css">
 
+    <link rel="stylesheet" href="css/book_page.css">
+
 </head>
 <body>
     <header class="header">
@@ -25,13 +27,13 @@
         <div class="header__menu">
 
             <div class="header__menu__item" id="main-button" onclick="menu()">
-                <a href="#">
+                <a href="#" onclick="home()">
                     Home
                 </a>
             </div>
 
             <div class="header__menu__item">
-                <a href="books.html">
+                <a href="#" onclick="books()">
                     Books
                 </a>
             </div>
@@ -51,13 +53,17 @@
         </div>
     </header>
 
-    <section class="actions">
+    <section class="actions" >
 
-        <input
-             type="text"
-             class="actions__searchbar"
-             placeholder="Look for a store..."
-        >
+        <form action="" id="actions__form" class="actions__form">
+            <input
+            type="text"
+            class="searchbar"
+            id="searchbar"
+            name="search"
+            placeholder="Look for a store..."
+            >
+        </form>
 
         <div class="actions__buttons">
 
@@ -73,11 +79,15 @@
 
     </section>
 
-    <main class="store-container">
+    <main 
+        class="store-container" 
+        id="stores"
+        style="display: none;"
+    >
 
         <div class="store-container__wrapper">
             <div class="store-item"
-            onclick="openLink('store.html')">
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -95,7 +105,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -113,7 +124,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -131,7 +143,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -149,7 +162,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -167,7 +181,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -185,7 +200,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -203,7 +219,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -221,7 +238,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -239,7 +257,8 @@
         </div>
 
         <div class="store-container__wrapper">
-            <div class="store-item">
+            <div class="store-item"
+            onclick="store()">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -258,7 +277,825 @@
 
     </main>
 
+    <main 
+        class="book-container reset-padding" 
+        id="books" 
+        style="display: none; padding-top: 2rem;"
+    >
+    
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+    </main>
+
+    <section 
+        class="store" 
+        id="store-books-header" 
+        style="display: none;"
+    >
+
+        
+        <img src="images/Store Logos/logo_test_1.png" class="store__logo" alt="">
+        
+        <div class="store__text">
+            <div class="store__text__name">
+                <span>
+                    Test Store
+                </span>
+            </div>
+            <div class="store__text__description">
+                <span>
+                    9999 Books
+                </span>
+            </div>
+        </div>
+
+    </section>
+    <main 
+        class="book-container" 
+        id="store-books"
+        style="display: none;"
+    >
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="book-container__wrapper">
+            
+            <div class="book-item">
+                
+                <img src="images/test_book_cover.png" alt="" class="book-item__logo">
+                
+                <div class="book-item__text">
+                    <div class="book-item__text__name book-item__text__item">
+                        <span>
+                            Blade Runner
+                        </span>
+                    </div>
+                    <div class="book-item__text__price book-item__text__item">
+                        <span>
+                            U$ 27.27
+                        </span>
+                    </div>
+                    <div class="book-item__text__units book-item__text__item">
+                        <span>
+                            27 units
+                        </span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </main>
+
+    <main
+        class="book-page-container"
+        id="book-page"
+    >
+        <div class="book-info">
+
+            <img src="images/test_book_cover.png" alt="" class="book__cover">
+
+            <div class="book__text">
+
+                <div class="book__name">
+                    <span>
+                        Blade Runner
+                    </span>
+                </div>
+
+                <div class="book__description">
+                    <span>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae amet dicta sed vitae maxime quae unde eveniet iusto assumenda? Necessitatibus.
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    <main 
+        class="store-container store-container__book-page" 
+        id="stores-books"
+        style="display: flex;"
+    >
+
+        <div class="store-container__wrapper">
+            <div class="store-item store-item__book-page"
+            onclick="store()">
+                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                <div class="store-item__text">
+                    <div class="store-item__text__name">
+                        <span>
+                            Test Store
+                        </span>
+                    </div>
+                    <div class="store-item__text__description">
+                        <span>
+                            9999 units
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-container__wrapper">
+            <div class="store-item store-item__book-page"
+            onclick="store()">
+                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                <div class="store-item__text">
+                    <div class="store-item__text__name">
+                        <span>
+                            Test Store
+                        </span>
+                    </div>
+                    <div class="store-item__text__description">
+                        <span>
+                            9999 units
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-container__wrapper">
+            <div class="store-item store-item__book-page"
+            onclick="store()">
+                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                <div class="store-item__text">
+                    <div class="store-item__text__name">
+                        <span>
+                            Test Store
+                        </span>
+                    </div>
+                    <div class="store-item__text__description">
+                        <span>
+                            9999 units
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-container__wrapper">
+            <div class="store-item store-item__book-page"
+            onclick="store()">
+                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                <div class="store-item__text">
+                    <div class="store-item__text__name">
+                        <span>
+                            Test Store
+                        </span>
+                    </div>
+                    <div class="store-item__text__description">
+                        <span>
+                            9999 units
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="store-container__wrapper">
+            <div class="store-item store-item__book-page"
+            onclick="store()">
+                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                <div class="store-item__text">
+                    <div class="store-item__text__name">
+                        <span>
+                            Test Store
+                        </span>
+                    </div>
+                    <div class="store-item__text__description">
+                        <span>
+                            9999 units
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
     <script src="js/menu.js"></script>
     <script src="js/link.js"></script>
+    <script src="js/main_switcher.js"></script>
 </body>
 </html>
