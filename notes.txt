@@ -1,8 +1,5 @@
-- página de livros na loja
-
 - busca de loja
-- busca de livro
-- busca de loja com livro
+- busca de livro e lojas com livro
 - busca de livro na loja
 
 - filtros
