@@ -29,11 +29,14 @@ function openMenu() {
 
 function closeMenu() {
 
-    for (let item of all_items) {
-        item.style.display = "none"
-    }
-
-    document.getElementById("main-button").style.display = "flex"
-
-    menu_is_open = 0
+    if (window_width < 940) {
+        
+        for (let item of all_items) {
+            item.style.display = "none"
+        }
+        
+        document.getElementById("main-button").style.display = "flex"
+        
+        menu_is_open = 0
+    } 
 }
