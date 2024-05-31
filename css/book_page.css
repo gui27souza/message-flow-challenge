@@ -52,10 +52,12 @@
     background-color: var(--main-red);
     box-sizing: border-box;
     padding: 1rem;
+
+    display: flex;
 }
 
 @media screen
-and (max-width: 500px) {
+and (max-width: 600px) {
     .book-info {
         flex-flow: column;
         gap: 1rem;
@@ -86,5 +88,69 @@ and (max-width: 355px) {
     .book-page-container {
         width: 85%;
         padding: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 601px) {
+    .book-info {
+        gap: 2rem;
+    }
+
+    .book__text {
+        height: 100%;
+
+        gap: 2rem;
+    }
+
+    .book__name {
+        height: 30%;
+
+        justify-content: center;
+        align-items: center;
+
+        font-size: 3rem;
+    }
+
+    .book__description {
+        flex-grow: 1;
+
+        font-size: 1.8rem;
+    }
+}
+
+@media screen
+and (min-width: 700px) {
+    
+    .book__name {
+        font-size: 3.6rem;
+    }
+
+    .book__description {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen
+and (min-width: 870px) {
+    
+    .book__name {
+        font-size: 4rem;
+    }
+
+    .book__description {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen
+and (min-width: 1000px) {
+    
+    .book__name {
+        font-size: 5rem;
+    }
+
+    .book__description {
+        font-size: 3rem;
     }
 }
