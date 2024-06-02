@@ -1,4 +1,6 @@
-- filtros
-- ordenadores
+- filters
+- order
 
 - about / contact
+
+- organize css files

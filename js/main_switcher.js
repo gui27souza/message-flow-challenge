@@ -1,6 +1,11 @@
-var window_width = window.innerWidth
+// Variables
 
-var searchbar = document.getElementById("searchbar")
+    var searchbar = document.getElementById("searchbar")
+    var window_width = window.innerWidth
+
+// 
+
+// Functions that change the sections displays on each specific case
 
 function home() {
 
@@ -17,6 +22,8 @@ function home() {
         searchbar.value = ""
 
     } else {
+        
+        // Closes the menu in smaller screens in case it is open on the page switch
         closeMenu()
     }
 
@@ -34,6 +41,8 @@ function books() {
     searchbar.setAttribute("placeholder", "Look for a book...")
     searchbar.value = ""
 
+    
+    // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
 }
 
@@ -49,6 +58,8 @@ function bookPage() {
     searchbar.setAttribute("placeholder", "Look for a store...")
     searchbar.value = ""
 
+    
+    // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
 }
 
@@ -64,5 +75,7 @@ function store() {
     searchbar.setAttribute("placeholder", "Look for a book...")
     searchbar.value = ""
 
+    
+    // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
 }

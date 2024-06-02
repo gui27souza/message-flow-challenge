@@ -1,22 +1,31 @@
-var all_items = document.getElementsByClassName("header__menu__item")
+// Variables
 
-var menu_is_open = 0
-
-function menu() {
-
+    var all_items = document.getElementsByClassName("header__menu__item")
+    var menu_is_open = 0
     var window_width = window.innerWidth
 
-    if (window_width > 940) {
-        return
-    } 
+// 
 
-    if (!menu_is_open) {
-        openMenu()
-    } else {
-        closeMenu()
+
+// Function that makes the menu work in smaller screens
+
+    function menu() {
+
+        // Does nothing if the screen is big, so it doesn't require the menu
+        if (window_width > 940) {
+            return
+        } 
+
+        // Calls the open or close menu if the menu is alternate
+        if (!menu_is_open) {
+            openMenu()
+        } else {
+            closeMenu()
+        }
+
     }
 
-}
+// 
 
 function openMenu() {
 
