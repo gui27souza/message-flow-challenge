@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/reset.css">
     <!---->
 
-    <!-- Main CSS -->
+    <!-- section CSS -->
         <link rel="stylesheet" href="css/style.css">
     <!---->
     
@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/books-container.css">
         <link rel="stylesheet" href="css/store.css">
         <link rel="stylesheet" href="css/book_page.css">
+        <link rel="stylesheet" href="css/about.css">
     <!---->
 
 </head>
@@ -29,13 +30,20 @@
     <!-- A div with a function to close the menu in small screens -->
     <div 
         class="menu-closer"
+        id="menu-closer"
         style="
+            display: none;
             position: absolute;
             width: 100%;
             height: 100%;
-            z-index: 0;
+            z-index: 2;
+
+            @media screen
+            and (min-width: 940px) {
+                display: none;
+            }
         "
-        onclick="closeMenu()"
+        onclick="menu()"
     ></div>
 
 
@@ -48,26 +56,36 @@
         
         <div class="header__menu">
 
-            <div class="header__menu__item" id="main-button" onclick="menu()">
-                <a href="#" onclick="home()">
-                    Home
+            <div class="header__menu__item" id="main-button">
+                <a onclick="menu()"
+                >
+                    Menu <span id="menu-decoration">III</span>
                 </a>
             </div>
 
             <div class="header__menu__item">
-                <a href="#" onclick="books()">
+                <a onclick="sectionSwitcher('all_store_page')"
+                >
+                    Stores
+                </a>
+            </div>
+
+            <div class="header__menu__item">
+                <a onclick="sectionSwitcher('all_book_page')"
+                >
                     Books
                 </a>
             </div>
 
             <div class="header__menu__item">
-                <a href="#">
+                <a onclick="sectionSwitcher('about_page')"
+                >
                     About
                 </a>
             </div>
 
             <div class="header__menu__item">
-                <a href="#">
+                <a onclick="sectionSwitcher('contact_page')">
                     Contact
                 </a>
             </div>
@@ -78,7 +96,10 @@
 
     <!-- Actions Section -->
     <!-- Searchbar, order and filter -->
-    <section class="actions" >
+    <section 
+        class="actions"
+        id="actions"
+    >
 
         <div id="actions__form" class="actions__form">
             <input
@@ -86,6 +107,7 @@
             class="searchbar"
             id="searchbar"
             name="search"
+            autocomplete="off"
             placeholder="Look for a store..."
             >
         </div>
@@ -109,14 +131,14 @@
 
     <!-- Homepage Section -->
     <!-- Has all stores  -->
-    <main 
-        class="store-container" 
-        id="stores"
+    <section 
+        class="store-container main_section" 
+        id="all_store_page"
     >
 
         <div class="store-container__wrapper" data-searchValue="alfa">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -135,7 +157,7 @@
 
         <div class="store-container__wrapper" data-searchValue="beta">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -154,7 +176,7 @@
 
         <div class="store-container__wrapper" data-searchValue="gama">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -173,7 +195,7 @@
 
         <div class="store-container__wrapper" data-searchValue="delta">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -192,7 +214,7 @@
 
         <div class="store-container__wrapper" data-searchValue="epsilon">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -211,7 +233,7 @@
 
         <div class="store-container__wrapper" data-searchValue="zeta">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -230,7 +252,7 @@
 
         <div class="store-container__wrapper" data-searchValue="eta">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -249,7 +271,7 @@
 
         <div class="store-container__wrapper" data-searchValue="theta">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -268,7 +290,7 @@
 
         <div class="store-container__wrapper" data-searchValue="iota">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -287,7 +309,7 @@
 
         <div class="store-container__wrapper" data-searchValue="kappa">
             <div class="store-item"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -304,22 +326,22 @@
             </div>
         </div>
 
-    </main>
+    </section>
 
 
 
 
     <!-- Books Section -->
     <!-- Has all books -->
-    <main 
-        class="book-container reset-padding" 
-        id="books" 
+    <section 
+        class="book-container reset-padding main_section" 
+        id="all_book_page" 
         style="display: none; padding-top: 2rem;"
     >
     
         <div class="book-container__wrapper" data-searchValue="Blade Runner">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/blade_runner.png" alt="" class="book-item__logo">
                 
@@ -346,7 +368,7 @@
     
         <div class="book-container__wrapper" data-searchValue="1984">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/1984.png" alt="" class="book-item__logo">
                 
@@ -373,7 +395,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Neuromancer">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/neuromancer.png" alt="" class="book-item__logo">
                 
@@ -400,7 +422,7 @@
     
         <div class="book-container__wrapper" data-searchValue="2001: A Space Odyssey">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/2001.png" alt="" class="book-item__logo">
                 
@@ -427,7 +449,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Dune">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/dune.png" alt="" class="book-item__logo">
                 
@@ -454,7 +476,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Cyberpunk: No_Coincidence">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/cyberpunk.png" alt="" class="book-item__logo">
                 
@@ -481,7 +503,7 @@
     
         <div class="book-container__wrapper" data-searchValue="">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/akira.png" alt="" class="book-item__logo">
                 
@@ -508,7 +530,7 @@
     
         <div class="book-container__wrapper" data-searchValue="">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/evangelion.png" alt="" class="book-item__logo">
                 
@@ -533,7 +555,7 @@
             </div>
         </div>
             
-    </main>
+    </section>
 
 
 
@@ -541,8 +563,8 @@
     <!-- Store Specific Section -->
     <!-- Has a Specific Store and all its books  -->
     <section 
-        class="store" 
-        id="store-books-header" 
+        class="store main_section" 
+        id="store_page_header" 
         style="display: none;"
     >
 
@@ -563,15 +585,15 @@
         </div>
 
     </section>
-    <main 
-        class="book-container" 
-        id="store-books"
+    <section 
+        class="book-container main_section" 
+        id="store_page"
         style="display: none;"
     >
         
         <div class="book-container__wrapper" data-searchValue="Blader Runner">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/blade_runner.png" alt="" class="book-item__logo">
                 
@@ -598,7 +620,7 @@
         
         <div class="book-container__wrapper" data-searchValue="1984">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/1984.png" alt="" class="book-item__logo">
                 
@@ -625,7 +647,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Neuromancer">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/neuromancer.png" alt="" class="book-item__logo">
                 
@@ -652,7 +674,7 @@
     
         <div class="book-container__wrapper" data-searchValue="2001: A Space Odyssey">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/2001.png" alt="" class="book-item__logo">
                 
@@ -679,7 +701,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Dune">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/dune.png" alt="" class="book-item__logo">
                 
@@ -706,7 +728,7 @@
     
         <div class="book-container__wrapper" data-searchValue="Cyberpunk: No_Coincidence">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/cyberpunk.png" alt="" class="book-item__logo">
                 
@@ -733,7 +755,7 @@
     
         <div class="book-container__wrapper" data-searchValue="">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/akira.png" alt="" class="book-item__logo">
                 
@@ -760,7 +782,7 @@
     
         <div class="book-container__wrapper" data-searchValue="">
             
-            <div class="book-item" onclick="bookPage()">
+            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
                 <img src="images/Book Covers/evangelion.png" alt="" class="book-item__logo">
                 
@@ -784,16 +806,16 @@
             
             </div>
         </div>
-    </main>
+    </section>
 
 
 
 
     <!-- Book Specific Section -->
     <!-- Has a Specific Book and all stores that contains it -->
-    <main
-        class="book-page-container"
-        id="book-page"
+    <section
+        class="book-page-container main_section"
+        id="book_page_header"
         style="display: none;"
     >
         <div class="book-info">
@@ -818,16 +840,16 @@
 
         </div>
 
-    </main>
-    <main 
-        class="store-container store-container__book-page" 
-        id="book-page-stores"
+    </section>
+    <section 
+        class="store-container store-container__book-page main_section" 
+        id="book_page"
         style="display: none;"
     >
 
         <div class="store-container__wrapper" data-searchValue="alfa">
             <div class="store-item store-item__book-page"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -846,7 +868,7 @@
 
         <div class="store-container__wrapper" data-searchValue="beta">
             <div class="store-item store-item__book-page"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -865,7 +887,7 @@
 
         <div class="store-container__wrapper" data-searchValue="gama">
             <div class="store-item store-item__book-page"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -884,7 +906,7 @@
 
         <div class="store-container__wrapper" data-searchValue="delta">
             <div class="store-item store-item__book-page"
-            onclick="store()">
+            onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
@@ -901,7 +923,36 @@
             </div>
         </div>
 
-    </main>
+    </section>
+
+
+
+
+    <!-- About Section -->
+    <!-- Description about the system and page -->
+    <section 
+        class="about__container main_section"
+        id="about_page"
+        style="display: none;"
+    >
+
+        <div class="about__img">
+            <img src="images/BookHub logos/text_logo.png" alt="" class="about__img__text">
+            <img src="images/BookHub logos/icon_logo.png" alt="" class="about__img__logo">
+        </div>
+
+        <div class="about__content">
+
+            <h1 class="about__content__title">
+                Lorem ipsum dolor sit amet
+            </h1>
+            <p class="about__content__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aliquam asperiores aut tempora assumenda voluptatem commodi earum, neque voluptatibus porro dolore ducimus illo dolor? Quaerat quis, perferendis, magnam obcaecati ab, earum odio nesciunt beatae tempore accusamus maxime totam aperiam natus quibusdam! Accusantium esse vel natus recusandae aperiam voluptas tenetur dignissimos!
+            </p>
+
+        </div>
+
+    </section>
 
 
 
@@ -912,7 +963,7 @@
     <!-- Scripts -->
         <script src="js/menu.js"></script>
         <script src="js/link.js"></script>
-        <script src="js/main_switcher.js"></script>
+        <script src="js/section_switcher.js"></script>
         <script src="js/search.js"></script>
     <!--  -->
 </body>

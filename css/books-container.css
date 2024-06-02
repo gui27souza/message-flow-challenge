@@ -22,7 +22,8 @@
 
 .book-item__logo {
     width: 100%;
-    height: 100%;
+
+    aspect-ratio: 14 / 20;
 
     object-fit: contain;
 
@@ -33,11 +34,19 @@
 .book-item__text {
     display: flex;
     flex-flow: column;
+
+    flex-grow: 1;
 }
 
 .book-item__logo,
 .book-item__text__item {
     background-color: var(--main-red);
+}
+
+.book-item__text__name {
+    flex-grow: 1;
+
+    font-weight: 700;
 }
 
 @media screen
@@ -143,13 +152,19 @@ and (min-width: 1700px) {
     }
 }
 
-.reset-padding {
-    padding-top: 2rem;
-}
 
-@media screen
-and (max-width: 355px) {
+
+/* Padding Reset so items can fit in other pages */
+
     .reset-padding {
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
-}
+
+    @media screen
+    and (max-width: 355px) {
+        .reset-padding {
+            padding-top: 1rem;
+        }
+    }
+
+/*  */

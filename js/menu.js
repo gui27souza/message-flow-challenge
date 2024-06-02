@@ -1,7 +1,11 @@
 // Variables
 
     var all_items = document.getElementsByClassName("header__menu__item")
+    var menu_closer_area = document.getElementById("menu-closer")
+    var menu_decoration = document.getElementById("menu-decoration")
+
     var menu_is_open = 0
+
     var window_width = window.innerWidth
 
 // 
@@ -33,19 +37,25 @@ function openMenu() {
         item.style.display = "flex"
     }
 
+    menu_closer_area.style.display = "block"
+    menu_decoration.style.transform = "rotate(0deg)"
+
     menu_is_open = 1
 }
 
 function closeMenu() {
 
-    if (window_width < 940) {
-        
-        for (let item of all_items) {
-            item.style.display = "none"
-        }
-        
-        document.getElementById("main-button").style.display = "flex"
-        
-        menu_is_open = 0
+    if (!menu_is_open || window_width > 940) {
+        return
     } 
+
+    for (let item of all_items) {
+        item.style.display = "none"
+    }
+    
+    document.getElementById("main-button").style.display = "flex"
+    
+    menu_closer_area.style.display = "none"
+    menu_decoration.style.transform = "rotate(90deg)"
+    menu_is_open = 0
 }
