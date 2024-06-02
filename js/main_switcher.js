@@ -27,6 +27,8 @@ function home() {
         closeMenu()
     }
 
+    // Reset search items on page switch
+    searchReset()
 }
 
 function books() {
@@ -44,6 +46,9 @@ function books() {
     
     // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
+
+    // Reset search items on page switch
+    searchReset()
 }
 
 function bookPage() {
@@ -61,6 +66,9 @@ function bookPage() {
     
     // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
+
+    // Reset search items on page switch
+    searchReset()
 }
 
 function store() {
@@ -78,4 +86,26 @@ function store() {
     
     // Closes the menu in smaller screens in case it is open on the page switch
     closeMenu()
+
+    // Reset search items on page switch
+    searchReset()
 }
+
+
+
+// Reset search items on page switch
+
+// Reset search items on page switch
+    function searchReset() {
+
+        for (let item of all_item_wrappers_store) {
+            item.style.display = "flex"
+        }
+
+        for (let item of all_item_wrappers_book) {
+            item.style.display = "flex"
+        }
+
+    }
+
+// 
