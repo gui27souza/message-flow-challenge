@@ -1,6 +1,4 @@
-- busca de loja
-- busca de livro e lojas com livro
-- busca de livro na loja
-
 - filtros
 - ordenadores
+
+- about / contact

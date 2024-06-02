@@ -1,5 +1,7 @@
 var window_width = window.innerWidth
 
+var searchbar = document.getElementById("searchbar")
+
 function home() {
 
     if (menu_is_open || window_width > 940) {
@@ -11,7 +13,9 @@ function home() {
         document.getElementById('book-page').style.display = 'none'
         document.getElementById('book-page-stores').style.display = 'none'
 
-        
+        searchbar.setAttribute("placeholder", "Look for a store...")
+        searchbar.value = ""
+
     } else {
         closeMenu()
     }
@@ -27,6 +31,9 @@ function books() {
     document.getElementById('book-page').style.display = 'none'
     document.getElementById('book-page-stores').style.display = 'none'
 
+    searchbar.setAttribute("placeholder", "Look for a book...")
+    searchbar.value = ""
+
     closeMenu()
 }
 
@@ -39,6 +46,9 @@ function bookPage() {
     document.getElementById('store-books').style.display = 'none'
     document.getElementById('store-books-header').style.display = 'none'
 
+    searchbar.setAttribute("placeholder", "Look for a store...")
+    searchbar.value = ""
+
     closeMenu()
 }
 
@@ -50,6 +60,9 @@ function store() {
     document.getElementById('stores').style.display = 'none'
     document.getElementById('book-page').style.display = 'none'
     document.getElementById('book-page-stores').style.display = 'none'
+
+    searchbar.setAttribute("placeholder", "Look for a book...")
+    searchbar.value = ""
 
     closeMenu()
 }

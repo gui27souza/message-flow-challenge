@@ -22,6 +22,9 @@
 
 .book-item__logo {
     width: 100%;
+    height: 100%;
+
+    object-fit: contain;
 
     box-sizing: border-box;
     padding: 1rem;
