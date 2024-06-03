@@ -6,6 +6,8 @@
     box-sizing: border-box;
     padding: 3rem;
 
+    margin-top: 5rem;
+
     display: flex;
     flex-flow: column;
     gap: 3rem;

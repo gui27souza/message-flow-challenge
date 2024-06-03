@@ -1,6 +1,6 @@
 - filters
 - order
 
-- about / contact
+- adjust search
 
 - organize css files

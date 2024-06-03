@@ -90,7 +90,10 @@ and (max-width: 480px) {
     .header__menu__item:nth-of-type(2) { top: 6rem;  }
     .header__menu__item:nth-of-type(3) { top: 12rem; }
     .header__menu__item:nth-of-type(4) { top: 18rem; }
-    .header__menu__item:nth-of-type(5) { top: 24rem; }
+    .header__menu__item:nth-of-type(5) { 
+        top: 24rem; 
+        border-bottom: 1px solid black; 
+    }
 }
 
 @media screen
@@ -141,7 +144,7 @@ and (max-width: 940px) {
     .header__menu__item:nth-of-type(5) {
         display: none;
 
-        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 }
 

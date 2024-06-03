@@ -1,0 +1,53 @@
+.contact__container {
+    background-color: var(--brown-red);
+    color: var(--main-white);
+
+    width: 90%;
+
+    margin-top: 5rem;
+
+    display: flex;
+    flex-flow: column;
+
+    box-sizing: border-box;
+    padding: 3rem;
+}
+
+.contact__container h1 {
+    font-size: 3rem;
+
+    margin-bottom: 5rem;
+}
+
+.contact__container h2 {
+    font-size: 2.4rem;
+
+    margin-bottom: 1.4rem;
+}
+
+.contact__container span {    
+    font-size: 2rem;
+    
+    margin-bottom: 5rem;
+    margin-left: 4rem;
+}
+
+.contact__container span a {
+    color: var(--main-red);
+    text-decoration: underline;
+}
+
+.contact__container h3 {
+    font-size: 2.2rem;
+
+    margin-bottom: 1rem;
+}
+
+.contact__container p {
+    font-size: 1.8rem;
+}
+
+.contact__container h1,
+.contact__container h3 {
+    text-decoration: underline;
+}
