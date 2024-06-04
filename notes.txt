@@ -4,3 +4,7 @@
 - adjust search
 
 - organize css files
+
+- organize about/section
+
+- style all page

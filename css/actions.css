@@ -52,11 +52,32 @@
     width: 16rem;
 }
 
+.no-items-found {
+    display: none;
+    
+    width: 90%;
+    
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.no-items-found p {
+    font-size: 5rem;
+
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
 @media screen
 and (max-width: 1200px) {
     .actions {
         margin: 5% 0;
     }    
+
+    .no-items-found p {
+        font-size: 4rem;
+    }
 }
 
 @media screen
@@ -111,6 +132,13 @@ and (max-width: 355px) {
     .actions__buttons__btn {
         font-size: 1.6rem;
     }
+
+    .no-items-found {
+        width: 85%;
+    }
+    .no-items-found p {
+        font-size: 3rem;
+    }
 }
 
 @media screen
@@ -134,7 +162,9 @@ and (max-width: 250px) {
         height: 3.6rem;
         gap: 1.4rem;
     }
+
 }
+
 
 
 
@@ -157,6 +187,14 @@ and (max-width: 250px) {
     .actions__buttons__btn {
         background-color: var(--dark-red);
         color: var(--main-white);
+    }
+
+    .no-items-found {
+        background-color: var(--brown-red);
+    }
+
+    .no-items-found p {
+        background-color: var(--main-red);
     }
 
 /**/
