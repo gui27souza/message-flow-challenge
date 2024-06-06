@@ -21,7 +21,11 @@ GENERAL IDEAS
 
     - on book page, add price of each store for the book
 
-    - json of books with the stores that contains it
+
+
+IT WORKS NOW, MIGHT REQUIRE UPDATE LATER
+
+    - All types of json search (books, stores, names, id)
 
 
 

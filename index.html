@@ -128,6 +128,7 @@
         </div>
 
     </section>
+    <!-- Section that is active when no items are found -->
     <section 
         class="no-items-found" 
         id="no-items-found"
@@ -147,195 +148,25 @@
         id="all_store_page"
     >
 
-        <div class="store-container__wrapper" data-searchValue="alfa">
+        <!-- Store Item template -->
+        <!-- <div class="store-container__wrapper" data-searchValue="">
             <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
+            onclick="sectionSwitcher('store_page', 'store_page_header'); openStore('')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
                 <div class="store-item__text">
                     <div class="store-item__text__name">
                         <span>
-                            alfa
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="store-container__wrapper" data-searchValue="beta">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            beta
                         </span>
                     </div>
                     <div class="store-item__text__description">
                         <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="store-container__wrapper" data-searchValue="gama">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            gama
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
                         </span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="delta">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            delta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="epsilon">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            epsilon
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="zeta">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            zeta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="eta">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            eta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="theta">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            theta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="iota">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            iota
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="kappa">
-            <div class="store-item"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            kappa
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            9999 books
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -350,11 +181,12 @@
         style="display: none; padding-top: 2rem;"
     >
     
-        <div class="book-container__wrapper" data-searchValue="Blade Runner">
+        <!-- Book Item Template -->
+        <!-- <div class="book-container__wrapper" data-searchValue="Blade Runner">
             
             <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
-                <img src="images/Book Covers/blade_runner.png" alt="" class="book-item__logo">
+                <img src="images/Book Covers/bladerunner.png" alt="" class="book-item__logo">
                 
                 <div class="book-item__text">
                     <div class="book-item__text__name book-item__text__item">
@@ -375,197 +207,8 @@
                 </div>
             
             </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="1984">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
+        </div> -->
                 
-                <img src="images/Book Covers/1984.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            1984
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 54.27
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            54 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Neuromancer">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/neuromancer.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Neuromancer
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 27.54
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            17 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="2001: A Space Odyssey">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/2001.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            2001: A Space Odyssey
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.01
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            201 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Dune">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/dune.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Dune
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 54.54
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            54 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Cyberpunk: No_Coincidence">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/cyberpunk.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Cyberpunk: No_Coincidence
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.77
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            207 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/akira.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Akira
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.19
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            27 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/evangelion.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Neon Genesis Evangelion
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.15
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            69 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-            
     </section>
 
 
@@ -584,12 +227,12 @@
         
         <div class="store__text">
             <div class="store__text__name">
-                <span>
+                <span id="store__text__name__store-name">
                     Test Store
                 </span>
             </div>
             <div class="store__text__description">
-                <span>
+                <span id="store__text__description__store-amount">
                     9999 Books
                 </span>
             </div>
@@ -602,221 +245,34 @@
         style="display: none;"
     >
         
-        <div class="book-container__wrapper" data-searchValue="Blader Runner">
+        <!-- Book Item Template -->
+        <!-- <div class="book-container__wrapper" data-searchValue="Blader Runner">
             
             <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
                 
-                <img src="images/Book Covers/blade_runner.png" alt="" class="book-item__logo">
+                <img src="images/Book Covers/bladerunner.png" alt="" class="book-item__logo">
                 
                 <div class="book-item__text">
                     <div class="book-item__text__name book-item__text__item">
                         <span>
-                            Blade Runner
+                            
                         </span>
                     </div>
                     <div class="book-item__text__price book-item__text__item">
                         <span>
-                            U$ 27.27
+                            U$ 
                         </span>
                     </div>
                     <div class="book-item__text__units book-item__text__item">
                         <span>
-                            27 units
+                             units
                         </span>
                     </div>
                 </div>
             
             </div>
-        </div>
+        </div> -->
         
-        <div class="book-container__wrapper" data-searchValue="1984">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/1984.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            1984
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 54.27
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            54 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Neuromancer">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/neuromancer.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Neuromancer
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 27.54
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            17 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="2001: A Space Odyssey">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/2001.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            2001: A Space Odyssey
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.01
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            201 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Dune">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/dune.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Dune
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 54.54
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            54 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="Cyberpunk: No_Coincidence">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/cyberpunk.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Cyberpunk: No_Coincidence
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.77
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            207 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/akira.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Akira
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.19
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            27 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    
-        <div class="book-container__wrapper" data-searchValue="">
-            
-            <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header')">
-                
-                <img src="images/Book Covers/evangelion.png" alt="" class="book-item__logo">
-                
-                <div class="book-item__text">
-                    <div class="book-item__text__name book-item__text__item">
-                        <span>
-                            Neon Genesis Evangelion
-                        </span>
-                    </div>
-                    <div class="book-item__text__price book-item__text__item">
-                        <span>
-                            U$ 20.15
-                        </span>
-                    </div>
-                    <div class="book-item__text__units book-item__text__item">
-                        <span>
-                            69 units
-                        </span>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
     </section>
 
 
@@ -831,13 +287,13 @@
     >
         <div class="book-info">
 
-            <img src="images/Book Covers/blade_runner.png" alt="" class="book__cover">
+            <img src="#" alt="" class="book__cover" id="book-cover">
 
             <div class="book__text">
 
-                <div class="book__name">
-                    <span>
-                        Blade Runner
+                <div class="book__name" >
+                    <span id="book-name">
+                        
                     </span>
                 </div>
 
@@ -858,7 +314,8 @@
         style="display: none;"
     >
 
-        <div class="store-container__wrapper" data-searchValue="alfa">
+        <!-- Book Item Template -->
+        <!-- <div class="store-container__wrapper" data-searchValue="alfa">
             <div class="store-item store-item__book-page"
             onclick="sectionSwitcher('store_page', 'store_page_header')">
                 <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
@@ -875,64 +332,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="beta">
-            <div class="store-item store-item__book-page"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            beta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            2727 units
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="gama">
-            <div class="store-item store-item__book-page"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            gama
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            2727 units
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="store-container__wrapper" data-searchValue="delta">
-            <div class="store-item store-item__book-page"
-            onclick="sectionSwitcher('store_page', 'store_page_header')">
-                <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
-                <div class="store-item__text">
-                    <div class="store-item__text__name">
-                        <span>
-                            delta
-                        </span>
-                    </div>
-                    <div class="store-item__text__description">
-                        <span>
-                            2727 units
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div> -->
 
     </section>
 
@@ -1014,6 +414,11 @@
         <script src="js/link.js"></script>
         <script src="js/section_switcher.js"></script>
         <script src="js/search.js"></script>
+
+        <script src="js/data.js"></script>
+        <script src="js/load.js"></script>
+        <script src="js/open_item.js"></script>
+        <script src="js/create_item.js"></script>
     <!--  -->
 </body>
 </html>
