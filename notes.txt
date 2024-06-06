@@ -1,10 +1,30 @@
-- filters
-- order
+PAGE
 
-- adjust search
+    - filters -> price
+    - order -> price, amount, name
 
-- organize css files
+    - adjust search -> lower/upper case, spaces
 
-- organize about/section
+    - organize about/section
 
-- style all page
+    - style all page
+
+
+
+FILES
+    
+    - organize css files
+
+
+
+GENERAL IDEAS
+
+    - on book page, add price of each store for the book
+
+    - json of books with the stores that contains it
+
+
+
+FUTURE / COMPLEX IDEAS
+
+    - Price Tracking

@@ -1,3 +1,33 @@
+/* Actions Colors */
+
+    .actions {
+        background-color: var(--brown-red);
+    }
+
+    .searchbar {
+        background-color: var(--dark-red);
+        color: var(--main-white);
+    }
+
+    .searchbar::placeholder {
+        color: color-mix(in srgb, var(--main-white), black 25%);
+    }
+
+    .actions__buttons__btn {
+        background-color: var(--dark-red);
+        color: var(--main-white);
+    }
+
+    .no-items-found {
+        background-color: var(--brown-red);
+    }
+
+    .no-items-found p {
+        background-color: var(--main-red);
+    }
+
+/**/
+
 .actions {
     display: flex;
     justify-content: space-between;
@@ -164,37 +194,3 @@ and (max-width: 250px) {
     }
 
 }
-
-
-
-
-
-/* Actions Colors */
-
-    .actions {
-        background-color: var(--brown-red);
-    }
-
-    .searchbar {
-        background-color: var(--dark-red);
-        color: var(--main-white);
-    }
-
-    .searchbar::placeholder {
-        color: color-mix(in srgb, var(--main-white), black 25%);
-    }
-
-    .actions__buttons__btn {
-        background-color: var(--dark-red);
-        color: var(--main-white);
-    }
-
-    .no-items-found {
-        background-color: var(--brown-red);
-    }
-
-    .no-items-found p {
-        background-color: var(--main-red);
-    }
-
-/**/

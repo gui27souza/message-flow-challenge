@@ -1,7 +1,17 @@
-.contact__container {
-    background-color: var(--brown-red);
-    color: var(--main-white);
+/* Contact Colors */
 
+    .contact__container {
+        background-color: var(--brown-red);
+        color: var(--main-white);
+    }
+
+    .contact__container span a {
+        color: var(--main-red);
+    }
+
+/*  */
+
+.contact__container {
     width: 90%;
 
     margin-top: 5rem;
@@ -33,7 +43,6 @@
 }
 
 .contact__container span a {
-    color: var(--main-red);
     text-decoration: underline;
 }
 

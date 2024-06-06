@@ -1,3 +1,21 @@
+/* Store Container Colors */
+
+    .store-container {
+        background-color: var(--brown-red);
+    }
+
+    .store-item {
+        background-color: var(--dark-red);
+    }
+
+    .store-item__logo,
+    .store-item__text__name,
+    .store-item__text__description {
+        background-color: var(--main-red);
+    }
+
+/**/
+
 .store-container {
     width: 90%;
 
@@ -202,24 +220,3 @@ and (min-width: 1850px) {
         font-weight: 600;
     }
 }
-
-
-
-
-/* Store Container Colors */
-
-    .store-container {
-        background-color: var(--brown-red);
-    }
-
-    .store-item {
-        background-color: var(--dark-red);
-    }
-
-    .store-item__logo,
-    .store-item__text__name,
-    .store-item__text__description {
-        background-color: var(--main-red);
-    }
-
-/**/

@@ -1,3 +1,28 @@
+/* Header Colors */
+
+    .header {
+        background-color: var(--brown-red);
+    }
+
+    .header__menu__item a {
+        background-color: var(--main-red);
+        color: var(--brown-red);
+
+        transition: background-color .15s ease, color .15s ease;
+    }
+
+    @media screen
+    and (min-width: 941px) {
+        
+        .header__menu__item a:hover {
+            background-color: color-mix(in srgb, var(--main-red), black 30% );
+            color: var(--main-white);
+        }
+
+    }
+
+/**/
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -206,31 +231,3 @@ and (min-width: 1060px) {
     }
 
 }
-
-
-
-
-/* Header Colors */
-
-    .header {
-        background-color: var(--brown-red);
-    }
-
-    .header__menu__item a {
-        background-color: var(--main-red);
-        color: var(--brown-red);
-
-        transition: background-color .15s ease, color .15s ease;
-    }
-
-    @media screen
-    and (min-width: 941px) {
-        
-        .header__menu__item a:hover {
-            background-color: color-mix(in srgb, var(--main-red), black 30% );
-            color: var(--main-white);
-        }
-
-    }
-
-/**/

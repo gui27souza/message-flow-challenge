@@ -1,7 +1,21 @@
+/* About Colors */
+
+    .about__container {
+        background-color: var(--brown-red);
+    }
+
+    .about__img {
+        background-color: var(--dark-red);
+    }
+
+    .about__content {
+        background-color: var(--main-red);
+    }
+
+/*  */
+
 .about__container {
     width: 90%;
-
-    background-color: var(--brown-red);
 
     box-sizing: border-box;
     padding: 3rem;
@@ -14,7 +28,6 @@
 }
 
 .about__img {
-    background-color: var(--dark-red);
     width: 100%;
 
     box-sizing: border-box;
@@ -38,8 +51,6 @@
 }
 
 .about__content {
-    background-color: var(--main-red);
-
     box-sizing: border-box;
     padding: 2rem;
 

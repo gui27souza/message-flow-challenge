@@ -1,5 +1,4 @@
 .book-container {
-    background-color: var(--brown-red);
     width: 90%;
 
     box-sizing: border-box;
@@ -11,8 +10,6 @@
 }
 
 .book-item {
-    background-color: var(--dark-red);
-
     box-sizing: border-box;
     padding: 1rem;
 
@@ -36,11 +33,6 @@
     flex-flow: column;
 
     flex-grow: 1;
-}
-
-.book-item__logo,
-.book-item__text__item {
-    background-color: var(--main-red);
 }
 
 .book-item__text__name {
@@ -165,6 +157,24 @@ and (min-width: 1700px) {
         .reset-padding {
             padding-top: 1rem;
         }
+    }
+
+/*  */
+
+
+/* Book Container Colors */
+
+    .book-container {
+        background-color: var(--brown-red);
+    }
+
+    .book-item {
+        background-color: var(--dark-red);
+    }
+
+    .book-item__logo,
+    .book-item__text__item {
+        background-color: var(--main-red);
     }
 
 /*  */
