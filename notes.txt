@@ -1,13 +1,21 @@
 PAGE
 
+    - Rebuild the container/item system to a grid
+
     - filters -> price
     - order -> price, amount, name
 
-    - adjust search -> lower/upper case, spaces
-
-    - organize about/section
+    - organize section
 
     - style all page
+
+    - standardize responsive breakpoints, after that, standardize paddings, fonts, gaps, etc
+
+
+
+ISSUES
+
+    - When searching on a book page or store page, if the search has an existing item, not necessarily on the store/book page, the not-found section does not appear
 
 
 

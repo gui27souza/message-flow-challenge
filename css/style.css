@@ -10,8 +10,15 @@
     --brown-red: #1d0b0b;
 }
 
+body, html {
+    min-height: 100vh;
+}
+
 body {
-    background-color: var(--dark-red);
+    background-image: 
+        linear-gradient(-40deg, var(--dark-red) 60%, var(--main-red));
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 
     display: flex;
     flex-flow: column;

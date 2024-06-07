@@ -95,7 +95,7 @@ and (max-width: 250px) {
 and (min-width: 251px) {
 
     .store-container {
-        padding: 1.6rem;
+        padding: 2rem;
     }
     
     .store-item {

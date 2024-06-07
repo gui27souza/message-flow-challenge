@@ -1,3 +1,33 @@
+/* Book Page Colors */
+
+    .store-container__book-page {
+        background-color: var(--brown-red);
+    }
+
+    .store-item__book-page {
+        background-color: var(--dark-red);
+    }
+
+    .book-page-container {
+        background-color: var(--brown-red);
+    }
+
+    .book-info {
+        background-color: var(--dark-red);
+    }
+
+    .book__cover {
+        background-color: var(--main-red);
+    }
+
+
+    .book__name,
+    .book__description {
+        background-color: var(--main-red);
+    }
+
+/*  */
+
 .store-container__book-page {
     box-sizing: border-box;
     padding: 0 1rem 2rem;
@@ -142,33 +172,3 @@ and (min-width: 1000px) {
         font-size: 3rem;
     }
 }
-
-/* Book Page Colors */
-
-    .store-container__book-page {
-        background-color: var(--brown-red);
-    }
-
-    .store-item__book-page {
-        background-color: var(--dark-red);
-    }
-
-    .book-page-container {
-        background-color: var(--brown-red);
-    }
-
-    .book-info {
-        background-color: var(--dark-red);
-    }
-
-    .book__cover {
-        background-color: var(--main-red);
-    }
-
-
-    .book__name,
-    .book__description {
-        background-color: var(--main-red);
-    }
-
-/*  */

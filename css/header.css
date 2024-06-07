@@ -106,9 +106,7 @@ and (max-width: 480px) {
     .header__menu__item:nth-of-type(4),
     .header__menu__item:nth-of-type(5) {
         display: none;
-
-        position: absolute;        
-
+        position: absolute;
         border-top: 1px solid black;
     }
 
@@ -168,7 +166,6 @@ and (max-width: 940px) {
     .header__menu__item:nth-of-type(4),
     .header__menu__item:nth-of-type(5) {
         display: none;
-
         border-bottom: 1px solid black;
     }
 }
@@ -181,7 +178,7 @@ and (min-width: 941px) {
     .header {
         height: 12rem;
 
-        padding: 2.4rem 5rem;
+        padding: 2.4rem 5%;
         box-sizing: border-box;
     }
 
