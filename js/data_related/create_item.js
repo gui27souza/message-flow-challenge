@@ -9,7 +9,7 @@
         store_element.innerHTML = `
             <div class="store-item"
                 onclick="sectionSwitcher('store_page', 'store_page_header'); openStore('${store_name}')">
-                    <img src="images/Store Logos/logo_test_1.png" alt="" class="store-item__logo">
+                    <img src="images/Store Logos/${store_name}.svg" alt="" class="store-item__logo">
                     <div class="store-item__text">
                         <div class="store-item__text__name">
                             <span>

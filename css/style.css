@@ -6,8 +6,8 @@
 
     --main-white: #fafafa;
     --main-red: #f33e3c;
-    --dark-red: color-mix(in srgb, var(--main-red), black 70%);
-    --brown-red: color-mix(in srgb, var(--main-red), hsl(0, 0%, 2%) 90%);
+    --dark-red: #491312;
+    --brown-red: #1d0b0b;
 }
 
 body {

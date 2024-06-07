@@ -8,6 +8,7 @@
         // Cleans the section and give Store Name
         document.getElementById('store_page').innerHTML = ''
         document.getElementById('store__text__name__store-name').innerHTML = store.name
+        document.getElementById('store-logo').setAttribute('src', `images/Store Logos/${store_name}.svg`)
 
         // Creates the Book Item, with name, price, amount and id, also counts how many differents book are in the store
         var store_amount = 0
