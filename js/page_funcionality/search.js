@@ -17,12 +17,12 @@
         there_is_item = 0
 
         // Gets the value
-        const input_value = searchbar.value
+        const input_value = searchbar.value.trim().toLowerCase()
 
         // For store search
         if (searchbar.getAttribute('placeholder') == "Look for a store...") {
             for (let item of all_item_wrappers_store) {
-                let storeName = item.getAttribute('data-searchValue')
+                let storeName = item.getAttribute('data-searchValue').toLowerCase()
 
                 if (storeName.includes(input_value)) {
                     item.style.display = 'flex'
@@ -37,7 +37,7 @@
         // For book search
         if (searchbar.getAttribute('placeholder') == "Look for a book...") {
             for (let item of all_item_wrappers_book) {
-                let storeName = item.getAttribute('data-searchValue')
+                let storeName = item.getAttribute('data-searchValue').toLowerCase()
 
                 if (storeName.includes(input_value)) {
                     item.style.display = 'flex'
