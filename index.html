@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/reset.css">
     <!---->
 
-    <!-- section CSS -->
+    <!-- Main CSS -->
         <link rel="stylesheet" href="css/style.css">
     <!---->
     
@@ -34,18 +34,6 @@
     <div 
         class="menu-closer"
         id="menu-closer"
-        style="
-            display: none;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-
-            @media screen
-            and (min-width: 940px) {
-                display: none;
-            }
-        "
         onclick="menu()"
     ></div>
 
@@ -410,15 +398,17 @@
 
     
     <!-- Scripts -->
-        <script src="js/menu.js"></script>
-        <script src="js/link.js"></script>
-        <script src="js/section_switcher.js"></script>
-        <script src="js/search.js"></script>
+        <!-- Page Funcionality Scripts -->
+        <script src="js/page_funcionality/link.js"></script>
+        <script src="js/page_funcionality/menu.js"></script>
+        <script src="js/page_funcionality/section_switcher.js"></script>
+        <script src="js/page_funcionality/search.js"></script>
 
-        <script src="js/data.js"></script>
-        <script src="js/load.js"></script>
-        <script src="js/open_item.js"></script>
-        <script src="js/create_item.js"></script>
+        <!-- Data Related Scripts -->
+        <script src="js/data_related/data.js"></script>
+        <script src="js/data_related/load.js"></script>
+        <script src="js/data_related/open_item.js"></script>
+        <script src="js/data_related/create_item.js"></script>
     <!--  -->
 </body>
 </html>
