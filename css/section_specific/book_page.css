@@ -14,16 +14,22 @@
 
     .book-info {
         background-color: var(--dark-red);
+
+        border-radius: .5rem;
     }
 
     .book__cover {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 
     .book__name,
     .book__description {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 /*  */

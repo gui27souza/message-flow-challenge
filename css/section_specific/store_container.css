@@ -1,21 +1,41 @@
-/* Store Container Colors */
+/* Store Container Colors and Style */
 
     .store-container {
         background-color: var(--brown-red);
+
+        border-radius: .5rem;
     }
 
     .store-item {
         background-color: var(--dark-red);
+
+        border-radius: .5rem;
+
+        transition: transform ease .15s, filter ease .15s;
     }
+
+    .store-item:hover {
+        cursor: pointer;
+
+        transform: scale(1.05);
+
+        filter: drop-shadow(0 0 1rem var(--dark-red));
+    }
+    
 
     .store-item__logo {
         background-image: 
-            linear-gradient(140deg, var(--second-red), var(--main-red) 60%);
+            linear-gradient(140deg, var(--second-red), var(--main-red) 60%)
+        ;
+
+        border-radius: .5rem;
     }
 
     .store-item__text__name,
     .store-item__text__description {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 /**/

@@ -1,58 +1,60 @@
-/* 
+// Variables
 
-all_store_page
+    // All displayable sections 
+    var all_main_section = document.getElementsByClassName("main_section")
+    // Window width check for display type: flex or grid
+    var window_width = window.innerWidth
 
-all_book_page
+// 
 
-store_page
-store_page_header
 
-book_page
-book_page_header
 
-about_page
+// Changes the section visibility, showing the ones in the parameter
 
-*/
+    function sectionSwitcher(...args) {
 
-var all_main_section = document.getElementsByClassName("main_section")
-var window_width = window.innerWidth
+        for (let section of all_main_section) {
+            
+            if (args.includes(section.id)) {
 
-function sectionSwitcher(...args) {
+                if (
+                    window_width >= 600 && (
+                        section.id == 'all_store_page' || 
+                        section.id == 'store_page') ||
+                    
+                    window_width >= 400 && (
+                        section.id == 'all_book_page' || 
+                        section.id == 'book_page')
+                ) {
+                    section.style.display = "grid"
+                } else {
+                    section.style.display = "flex"
+                }
 
-    for (let section of all_main_section) {
-        
-        if (args.includes(section.id)) {
-
-            if (
-                window_width >= 600 && (
-                    section.id == 'all_store_page' || 
-                    section.id == 'store_page') ||
-                
-                window_width >= 400 && (
-                    section.id == 'all_book_page' || 
-                    section.id == 'book_page')
-            ) {
-                section.style.display = "grid"
             } else {
-                section.style.display = "flex"
+                section.style.display = "none"
             }
 
-        } else {
-            section.style.display = "none"
         }
 
+        if (args.length == 2) {
+            sectionStyle(args[0], args[1])
+        }
+
+        closeMenu()
+
+        searchReset(args)
+
+        if (args.includes('about_page') || args.includes('contact_page')) {
+            document.getElementById('actions').style.display = 'none'
+        } else {
+            document.getElementById('actions').style.display = 'flex'
+        }
     }
 
-    closeMenu()
+// 
 
-    searchReset(args)
 
-    if (args.includes('about_page') || args.includes('contact_page')) {
-        document.getElementById('actions').style.display = 'none'
-    } else {
-        document.getElementById('actions').style.display = 'flex'
-    }
-}
 
 // Reset search items on page switch
 
@@ -75,6 +77,17 @@ function sectionSwitcher(...args) {
         }
 
         searchbar.value = ""
+    }
+
+// 
+
+// Border Radius Adjust
+
+    function sectionStyle(section1, section2) {
+
+        document.getElementById(section1).style.borderRadius = '0 0 .5rem .5rem'
+        document.getElementById(section2).style.borderRadius = '.5rem .5rem 0 0'
+
     }
 
 // 

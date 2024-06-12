@@ -1,16 +1,32 @@
-/* Book Container Colors */
+/* Book Container Colors and Style */
 
     .book-container {
         background-color: var(--brown-red);
+
+        border-radius: .5rem;
     }
 
     .book-item {
         background-color: var(--dark-red);
+
+        border-radius: .5rem;
+
+        transition: transform ease .15s, filter ease .15s;
+    }
+
+    .book-item:hover {
+        cursor: pointer;
+
+        transform: scale(1.05);
+
+        filter: drop-shadow(0 0 1rem var(--dark-red));
     }
 
     .book-item__logo,
     .book-item__text__item {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 /**/

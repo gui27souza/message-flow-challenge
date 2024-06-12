@@ -1,19 +1,19 @@
 PAGE
 
-    - filters -> price
+    - filters -> price range, units range
     - order -> price, amount, name
 
     - organize section
 
     - style all page
 
+    - style no-items-found
+
     - adjust items templates on create_item.js
 
 
 
 ISSUES
-
-    - Adjust display flex/grid on section_switcher.js
 
     - When searching on a book page or store page, if the search has an existing item, not necessarily on the store/book page, the not-found section does not appear
 

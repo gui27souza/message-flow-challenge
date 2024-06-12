@@ -1,4 +1,4 @@
-/* Store Colors */
+/* Store Colors and Style */
 
     .store {
         background-color: var(--brown-red);
@@ -6,12 +6,17 @@
 
     .store__logo {
         background-image: 
-            linear-gradient(140deg, var(--second-red), var(--main-red) 60%);
+            linear-gradient(140deg, var(--second-red), var(--main-red) 60%)
+        ;
+
+        border-radius: .5rem;
     }
 
     .store__text__name,
     .store__text__description {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 /*  */

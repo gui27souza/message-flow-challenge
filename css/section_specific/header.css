@@ -1,4 +1,4 @@
-/* Header Colors */
+/* Header Colors and Style */
 
     .header {
         background-color: var(--brown-red);
@@ -8,15 +8,17 @@
         background-color: var(--main-red);
         color: var(--brown-red);
 
-        transition: background-color .15s ease, color .15s ease;
+        transition: background-color .15s ease, color .15s ease, filter .15s ease;
     }
 
     @media screen
-    and (min-width: 941px) {
+    and (min-width: 900px) {
         
         .header__menu__item a:hover {
-            background-color: color-mix(in srgb, var(--main-red), black 30% );
+            background-color: var(--third-red);
             color: var(--main-white);
+
+            filter: drop-shadow(0 0 .3rem var(--third-red));
         }
 
     }
@@ -167,6 +169,7 @@ and (min-width: 900px) {
     .header__menu__item:nth-of-type(4),
     .header__menu__item:nth-of-type(5) {
         border-top: none;
+        border-bottom: none;
         display: block;
         position: unset;
     }

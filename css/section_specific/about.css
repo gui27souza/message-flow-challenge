@@ -2,15 +2,22 @@
 
     .about__container {
         background-color: var(--brown-red);
+
+        border-radius: .5rem;
     }
 
     .about__img {
         background-image: 
-            linear-gradient(140deg, var(--dark-red) 60%, var(--main-red));
+            linear-gradient(140deg, var(--dark-red) 60%, var(--main-red))
+        ;
+
+        border-radius: .5rem;
     }
 
     .about__content {
         background-color: var(--main-red);
+
+        border-radius: .5rem;
     }
 
 /*  */
