@@ -16,7 +16,7 @@
     function menu() {
 
         // Does nothing if the screen is big, so it doesn't require the menu
-        if (window_width > 940) {
+        if (window_width >= 900) {
             return
         } 
 
@@ -45,7 +45,7 @@ function openMenu() {
 
 function closeMenu() {
 
-    if (!menu_is_open || window_width > 940) {
+    if (!menu_is_open || window_width >= 900) {
         return
     } 
 

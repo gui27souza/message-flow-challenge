@@ -1,0 +1,148 @@
+/* Actions Colors */
+
+    .actions {
+        background-color: var(--brown-red);
+    }
+
+    .searchbar {
+        background-color: var(--dark-red);
+        color: var(--main-white);
+    }
+
+    .searchbar::placeholder {
+        color: color-mix(in srgb, var(--main-white), black 25%);
+    }
+
+    .actions__buttons__btn {
+        background-color: var(--dark-red);
+        color: var(--main-white);
+    }
+
+    .no-items-found {
+        background-color: var(--brown-red);
+    }
+
+    .no-items-found p {
+        background-color: var(--main-red);
+    }
+
+/**/
+
+.actions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    gap: var(--container-gap);
+
+    padding: var(--container-padding);
+
+    width: var(--main-width);
+
+    margin: var(--margin);
+
+    z-index: 0;
+}
+
+.searchbar {
+    font-size: 2rem;
+        
+    
+    padding: 1.4rem;
+    
+    width: 100%;
+    height: 4rem;
+}
+
+.actions__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: var(--container-gap);
+    
+    width: 100%;
+    height: 4rem;
+}
+
+.actions__buttons__btn {
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.no-items-found {
+    display: none;
+    
+    width: 90%;
+    
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.no-items-found p {
+    font-size: 5rem;
+
+    padding: 1rem;
+}
+
+@media screen 
+and (min-width: 300px) {
+    
+}
+
+@media screen 
+and (min-width: 400px) {
+    
+    .searchbar,
+    .actions__buttons {
+        height: 6rem;
+    }
+
+    .searchbar,
+    .actions__buttons__btn {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen 
+and (min-width: 600px) {
+}
+
+@media screen 
+and (min-width: 900px) {
+    
+    .actions {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+    .searchbar {
+        max-width: 40rem;
+    }
+
+    .actions__buttons {
+        max-width: 30rem;
+    }
+}
+
+@media screen 
+and (min-width: 1200px) {
+
+}
+
+@media screen 
+and (min-width: 1500px) {
+    .searchbar {
+        max-width: 60rem;
+    }
+
+    .actions__buttons {
+        max-width: 45rem;
+    }
+}

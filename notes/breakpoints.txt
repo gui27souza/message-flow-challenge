@@ -1,0 +1,62 @@
+xs    0    300    
+s     300  400
+m     400  600
+.     485         - breakpoint container grid
+l     600  900
+xl    900  1500
+xxl   1200        - breakpoint container grid and header buttons
+dt    1500 --
+
+
+header
+
+    done
+
+    - 1200
+
+
+
+
+
+actions
+
+    done
+
+
+store_page
+
+    done
+
+
+store_container
+
+    done
+
+    - 1200
+
+
+book_page
+
+    done
+
+    - 520
+
+
+book_container 
+
+    done
+
+    - 485
+    - 525
+    - 750
+    - 950
+
+
+contact
+
+    done
+
+
+about
+
+    done

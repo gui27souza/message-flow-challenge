@@ -12,18 +12,19 @@
     <!---->
 
     <!-- Main CSS -->
+        <link rel="stylesheet" href="css/main_variables.css">
         <link rel="stylesheet" href="css/style.css">
     <!---->
     
     <!-- Section Specific CSS -->
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/actions.css">
-        <link rel="stylesheet" href="css/store_container.css">
-        <link rel="stylesheet" href="css/books-container.css">
-        <link rel="stylesheet" href="css/store.css">
-        <link rel="stylesheet" href="css/book_page.css">
-        <link rel="stylesheet" href="css/about.css">
-        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/section_specific/header.css">
+        <link rel="stylesheet" href="css/section_specific/actions.css">
+        <link rel="stylesheet" href="css/section_specific/store_container.css">
+        <link rel="stylesheet" href="css/section_specific/book_container.css">
+        <link rel="stylesheet" href="css/section_specific/store_page.css">
+        <link rel="stylesheet" href="css/section_specific/book_page.css">
+        <link rel="stylesheet" href="css/section_specific/about.css">
+        <link rel="stylesheet" href="css/section_specific/contact.css">
     <!---->
 
 </head>
@@ -92,16 +93,14 @@
         id="actions"
     >
 
-        <div id="actions__form" class="actions__form">
-            <input
-            type="text"
-            class="searchbar"
-            id="searchbar"
-            name="search"
-            autocomplete="off"
-            placeholder="Look for a store..."
-            >
-        </div>
+        <input
+        type="text"
+        class="searchbar"
+        id="searchbar"
+        name="search"
+        autocomplete="off"
+        placeholder="Look for a store..."
+        >
 
         <div class="actions__buttons">
 
@@ -164,9 +163,9 @@
     <!-- Books Section -->
     <!-- Has all books -->
     <section 
-        class="book-container reset-padding main_section" 
+        class="book-container main_section" 
         id="all_book_page" 
-        style="display: none; padding-top: 2rem;"
+        style="display: none;"
     >
     
         <!-- Book Item Template -->
@@ -281,7 +280,7 @@
 
                 <div class="book__name" >
                     <span id="book-name">
-                        
+                        Test Book
                     </span>
                 </div>
 
@@ -363,29 +362,39 @@
         style="display: none;"
     >
 
-        <h1>
+        <h1 class="contact__text">
             Lorem ipsum dolor
         </h1>
 
-        <h2>
-            Github
-        </h2>
-        <span> <a href="#">LoremIpsum</a> </span>
+        <div class="contact__text__links">
 
-        <h2>
-            LinkedIn
-        </h2>
-        <span> <a href="#">LoremIpsum</a> </span>
+            <div class="contact__text__links__item">
+                <h2 class="contact__text">
+                    Github
+                </h2>
+                <span class="contact__text"> <a href="#">LoremIpsum</a> </span>
+            </div>
+    
+            <div class="contact__text__links__item">
+                <h2 class="contact__text">
+                    LinkedIn
+                </h2>
+                <span class="contact__text"> <a href="#">LoremIpsum</a> </span>
+            </div>
 
-        <h2>
-            Email
-        </h2>
-        <span> <a href="#">LoremIpsum@loremail.com</a> </span>
+            <div class="contact__text__links__item">
+                <h2 class="contact__text">
+                    Email
+                </h2>
+                <span class="contact__text"> <a href="#">LoremIpsum@loremail.com</a> </span>
+            </div>
 
-        <h3>
+        </div>
+
+        <h3 class="contact__text">
             Lorem ipsum dolor sit amet.
         </h3>
-        <p>
+        <p class="contact__text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias sed aliquam voluptatibus similique voluptas non at dolor laudantium itaque.
         </p>
         

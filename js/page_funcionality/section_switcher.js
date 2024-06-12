@@ -15,13 +15,28 @@ about_page
 */
 
 var all_main_section = document.getElementsByClassName("main_section")
+var window_width = window.innerWidth
 
 function sectionSwitcher(...args) {
 
     for (let section of all_main_section) {
         
         if (args.includes(section.id)) {
-            section.style.display = "flex"
+
+            if (
+                window_width >= 600 && (
+                    section.id == 'all_store_page' || 
+                    section.id == 'store_page') ||
+                
+                window_width >= 400 && (
+                    section.id == 'all_book_page' || 
+                    section.id == 'book_page')
+            ) {
+                section.style.display = "grid"
+            } else {
+                section.style.display = "flex"
+            }
+
         } else {
             section.style.display = "none"
         }

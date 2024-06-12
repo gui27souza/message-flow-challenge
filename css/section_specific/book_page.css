@@ -1,0 +1,167 @@
+/* Book Page Colors */
+
+    .store-container__book-page {
+        background-color: var(--brown-red);
+    }
+
+    .store-item__book-page {
+        background-color: var(--dark-red);
+    }
+
+    .book-page-container {
+        background-color: var(--brown-red);
+    }
+
+    .book-info {
+        background-color: var(--dark-red);
+    }
+
+    .book__cover {
+        background-color: var(--main-red);
+    }
+
+
+    .book__name,
+    .book__description {
+        background-color: var(--main-red);
+    }
+
+/*  */
+
+.book-page-container {
+    width: var(--main-width);
+
+    padding: var(--container-padding);
+    padding-bottom: 0;
+
+    display: flex;
+}
+
+.book-info {
+    width: 100%;
+
+    padding: var(--item-padding);
+
+    display: flex;
+    flex-flow: column;
+
+    gap: var(--item-gap);
+}
+
+.book__cover {
+    object-fit: contain;
+    padding: var(--item-padding);
+}
+
+.book__text {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+
+    gap: var(--inner-gap);
+}
+
+.book__name,
+.book__description {
+    padding: var(--inner-padding);
+
+    display: flex;
+}
+
+.book__name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.book__description {
+    font-size: 1.6rem;
+}
+
+@media screen
+and (min-width: 300px) {
+
+}
+
+@media screen
+and (min-width: 400px) {
+    
+}
+
+@media screen
+and (min-width: 520px) {
+    .book-info {
+        flex-flow: row;
+    }
+
+    .book__cover {
+        height: 20rem;
+    }
+
+    .book__name {
+        height: 22%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book__description {
+        flex-grow: 1;
+    }
+}
+
+@media screen
+and (min-width: 600px) {
+
+    .book__cover {
+        height: 32rem;
+    }
+
+    .book__name {
+        font-size: calc(2rem + .5vw);
+    }
+    .book__description {
+        font-size: calc(1.8rem + .5vw);
+    }
+
+}
+
+@media screen
+and (min-width: 900px) {
+    .book__cover {
+        height: 40rem;
+    }
+
+    .book__name {
+        height: 15%;
+
+        font-size: calc(2.6rem + .5vw);
+        font-weight: 500;
+    }
+    .book__description {
+        font-size: calc(2rem + 1vw);
+        font-weight: 300;
+    }
+}
+
+@media screen 
+and (min-width: 1200px) {
+    .book__name {
+        height: 20%;
+
+        font-size: calc(2.6rem + .5vw);
+        font-weight: 500;
+    }
+    .book__description {
+        font-size: calc(3.4rem + 0.2vw);
+    }
+}
+
+@media screen
+and (min-width: 1500px) {
+    .book__name {
+        font-size: 4rem;
+    }
+    .book__description {
+        font-size: 4rem;
+    }
+}

@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     font-size: 62.5%;
     font-family: "Exo 2", sans-serif;
 
     --main-white: #fafafa;
     --main-red: #f33e3c;
+    --second-red: #861b19;
     --dark-red: #491312;
     --brown-red: #1d0b0b;
 }
