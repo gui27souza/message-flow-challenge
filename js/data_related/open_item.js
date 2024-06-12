@@ -45,7 +45,7 @@
         data.forEach(store => {
             store.resellerBookStock.forEach(book => {
                 if (book.id == book_id) {
-                    createStore(store.name, book.amount + ' units', 'book_page')
+                    createStore(store.name, book.amount + ' units', 'book_page', book.price)
                 }
             })
         })

@@ -1,6 +1,6 @@
 // Creates a Store Item in the HTML
 
-    function createStore(store_name, store_full_amount, section_id) {
+    function createStore(store_name, store_full_amount, section_id, price) {
             
         const store_element = document.createElement("div")
         store_element.classList.add("store-container__wrapper")
@@ -16,9 +16,14 @@
                                 ${store_name}
                             </span>
                         </div>
-                        <div class="store-item__text__description">
+                        <div class="store-item__text__amount">
                             <span>
                                 ${store_full_amount}
+                            </span>
+                        </div>
+                        <div class="store-item__text__price">
+                            <span>
+                                U$ ${price}
                             </span>
                         </div>
                     </div>
@@ -26,13 +31,20 @@
         `;
 
         document.getElementById(`${section_id}`).appendChild(store_element)
+
+        if (price == undefined) {
+            price = ''
+            for (let price_div of document.getElementsByClassName('store-item__text__price')) {
+                price_div.style.display = 'none'
+            }
+        }
     }
 
 //
 
 
 
-// Creates a Store Item in the HTML
+// Creates a Book Item in the HTML
 
     function createBook(name, price, amount, id, section_id) {
 

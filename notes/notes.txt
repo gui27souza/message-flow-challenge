@@ -28,7 +28,6 @@ FILES
 
 GENERAL IDEAS
 
-    - on book page, add price of each store for the book
 
 
 
