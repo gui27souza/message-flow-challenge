@@ -10,6 +10,8 @@ PAGE
     - style no-items-found
 
     - adjust items templates on create_item.js
+        - remove wrappers
+    
 
 
 
