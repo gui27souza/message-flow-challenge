@@ -6,6 +6,7 @@ PAGE
     - organize section
 
     - style all page
+        - make a way to have border-radius on book covers
 
     - style no-items-found
 

@@ -15,7 +15,9 @@
     }
 
     .about__content {
-        background-color: var(--main-red);
+        background-image: 
+            linear-gradient(120deg, var(--main-red) 60%, var(--red-white))
+        ;
 
         border-radius: .5rem;
     }

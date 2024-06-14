@@ -14,7 +14,7 @@
     }
 
     .searchbar::placeholder {
-        color: color-mix(in srgb, var(--main-white), black 25%);
+        color: #b8b2b1;
     }
 
     .actions__buttons__btn {
