@@ -22,7 +22,7 @@
         // For store search
         if (searchbar.getAttribute('placeholder') == "Look for a store...") {
             for (let item of all_item_wrappers_store) {
-                let storeName = item.getAttribute('data-searchValue').toLowerCase()
+                let storeName = item.getAttribute('data-name').toLowerCase()
 
                 if (storeName.includes(input_value)) {
                     item.style.display = 'flex'
@@ -37,7 +37,7 @@
         // For book search
         if (searchbar.getAttribute('placeholder') == "Look for a book...") {
             for (let item of all_item_wrappers_book) {
-                let storeName = item.getAttribute('data-searchValue').toLowerCase()
+                let storeName = item.getAttribute('data-name').toLowerCase()
 
                 if (storeName.includes(input_value)) {
                     item.style.display = 'flex'

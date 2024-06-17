@@ -3,8 +3,17 @@
     function createStore(store_name, store_full_amount, section_id, price) {
             
         const store_element = document.createElement("div")
-        store_element.classList.add("store-container__wrapper")
-        store_element.setAttribute('data-searchValue', `${store_name}`)
+        store_element.classList.add("store-container__wrapper", "container-item-store")
+        
+        store_element.setAttribute('data-name', `${store_name}`)
+        store_element.setAttribute('data-price', `${price}`)
+        store_element.setAttribute('data-amount', `${store_full_amount}`)
+
+        if(section_id == 'all_store_page') {
+            store_full_amount += ' Books'
+        } else {
+            store_full_amount += ' Units'
+        }
 
         store_element.innerHTML = `
             <div class="store-item"
@@ -49,11 +58,15 @@
     function createBook(name, price, amount, id, section_id) {
 
         const book_element = document.createElement("div")
-        book_element.classList.add("book-container__wrapper")
-        book_element.setAttribute('data-searchValue', `${name}`)
+        book_element.classList.add("book-container__wrapper", "container-item-book")
+
+        book_element.setAttribute('data-name', `${name}`)
+        book_element.setAttribute('data-price', `${price}`)
+        book_element.setAttribute('data-amount', `${amount}`)
+
         book_element.innerHTML = `
             <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header'); openBook('${name}', '${id}')">
-                    
+
                 <img src="images/Book Covers/${id}.png" alt="" class="book-item__logo">
                 
                 <div class="book-item__text">
@@ -69,7 +82,7 @@
                     </div>
                     <div class="book-item__text__units book-item__text__item">
                         <span>
-                            ${amount} units
+                            ${amount} Units
                         </span>
                     </div>
                 </div>

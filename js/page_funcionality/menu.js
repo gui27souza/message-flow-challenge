@@ -1,6 +1,6 @@
 // Variables
 
-    var all_items = document.getElementsByClassName("header__menu__item")
+    var all_menu_items = document.getElementsByClassName("header__menu__item")
     var menu_closer_area = document.getElementById("menu-closer")
     var menu_decoration = document.getElementById("menu-decoration")
 
@@ -33,7 +33,7 @@
 
 function openMenu() {
 
-    for (let item of all_items) {
+    for (let item of all_menu_items) {
         item.style.display = "flex"
     }
 
@@ -49,7 +49,7 @@ function closeMenu() {
         return
     } 
 
-    for (let item of all_items) {
+    for (let item of all_menu_items) {
         item.style.display = "none"
     }
     

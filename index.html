@@ -63,8 +63,10 @@
             </div>
 
             <div class="header__menu__item">
-                <a onclick="sectionSwitcher('all_book_page')"
-                >
+                <a onclick="
+                    sectionSwitcher('all_book_page'); 
+                    order('book', 'name_ascending')
+                ">
                     Books
                 </a>
             </div>
@@ -104,9 +106,34 @@
 
         <div class="actions__buttons">
 
-            <div id="order" class="actions__buttons__btn">
-                <span>Order</span>
-            </div>
+            <select id="order" class="actions__buttons__btn" onchange="order(order_type, this.options[this.selectedIndex].id)">
+                <option 
+                    id="name_ascending">
+                    Name A-Z
+                </option>
+                <option 
+                    id="name_descending">
+                    Name Z-A
+                </option>
+                <option 
+                    id="price_ascending"
+                    style="display: none;">
+                    Price &#8593;
+                </option>
+                <option 
+                    id="price_descending"
+                    style="display: none;">
+                    Price &#8595;
+                </option>
+                <option 
+                    id="amount_ascending">
+                    Stock &#8593;
+                </option>
+                <option 
+                    id="amount_descending">
+                    Stock &#8595;
+                </option>
+            </select>
 
             <div id="filter" class="actions__buttons__btn">
                 <span>Filter</span>
@@ -131,7 +158,7 @@
     <!-- Homepage Section -->
     <!-- Has all stores  -->
     <section 
-        class="store-container main_section" 
+        class="store-container main_section main_section_order" 
         id="all_store_page"
     ></section>
 
@@ -141,7 +168,7 @@
     <!-- Books Section -->
     <!-- Has all books -->
     <section 
-        class="book-container main_section" 
+        class="book-container main_section main_section_order" 
         id="all_book_page" 
         style="display: none;"
     ></section>
@@ -175,7 +202,7 @@
 
     </section>
     <section 
-        class="book-container main_section" 
+        class="book-container main_section main_section_order" 
         id="store_page"
         style="display: none;"
     ></section>
@@ -214,7 +241,7 @@
 
     </section>
     <section 
-        class="store-container store-container__book-page main_section" 
+        class="store-container store-container__book-page main_section main_section_order" 
         id="book_page"
         style="display: none;"
     ></section>
@@ -253,7 +280,7 @@
     <!-- Contact Section -->
     <!-- Information about Contact -->
     <section 
-        class="contact__container main_section"
+        class="contact__container main_section main_section_order"
         id="contact_page"
         style="display: none;"
     >
@@ -304,10 +331,10 @@
     
     <!-- Scripts -->
         <!-- Page Funcionality Scripts -->
-        <script src="js/page_funcionality/link.js"></script>
         <script src="js/page_funcionality/menu.js"></script>
         <script src="js/page_funcionality/section_switcher.js"></script>
         <script src="js/page_funcionality/search.js"></script>
+        <script src="js/page_funcionality/order.js"></script>
 
         <!-- Data Related Scripts -->
         <script src="js/data_related/data.js"></script>
@@ -315,5 +342,15 @@
         <script src="js/data_related/open_item.js"></script>
         <script src="js/data_related/create_item.js"></script>
     <!--  -->
+
+    <script>
+
+        var order_type = 'store'
+
+        // Simple function to help page switch
+        function openLink(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
