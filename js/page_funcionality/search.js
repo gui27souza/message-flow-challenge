@@ -1,12 +1,14 @@
 // Variables
 
     var searchbar = document.getElementById("searchbar")
+    
     var all_item_wrappers_store = document.getElementsByClassName("store-container__wrapper")
     var all_item_wrappers_book = document.getElementsByClassName("book-container__wrapper")
 
     var there_is_item = 0
 
     const margin_bottom_actions = document.getElementById('actions').style.marginBottom
+    const padding_bottom_actions = document.getElementById('actions').style.paddingBottom
 
 // 
 
@@ -49,19 +51,48 @@
             }
         }
 
+        noItemsFound(there_is_item)
+    })
+
+// 
+
+
+
+// no-items-found manager
+
+    function noItemsFound(there_is_item) {
+        
+        // Gets HTML elements
+            let visible_container = findVisibleContainer()
+            let visible_header = findVisibleHeader()
+
+            const actions = document.getElementById('actions')
+            const no_items_found = document.getElementById('no-items-found')
+        // 
+
         if (!there_is_item) {
+                
+            no_items_found.style.display = "block"
             
-            document.getElementById('no-items-found').style.display = "block"
-            
-            document.getElementById('actions').style.marginBottom = 0
+            actions.style.marginBottom = 0
+            actions.style.paddingBottom = 0
+            actions.style.borderRadius = '.5rem .5rem 0 0'
+
+            visible_container.style.visibility = 'hidden'
+
+            if (visible_header) visible_header.style.visibility = 'hidden'
 
         } else {
 
-            document.getElementById('no-items-found').style.display = "none"
+            no_items_found.style.display = "none"
+            
+            actions.style.marginBottom = margin_bottom_actions
+            actions.style.paddingBottom = padding_bottom_actions
+            actions.style.borderRadius = '.5rem'
 
-            document.getElementById('actions').style.marginBottom = margin_bottom_actions
-
+            visible_container.style.visibility = 'visible'
+            if (visible_header) visible_header.style.visibility = 'visible'
         }
-    })
+    }
 
 // 

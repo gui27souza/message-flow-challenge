@@ -14,9 +14,9 @@
 
     function sectionSwitcher(...args) {
 
+        // Display type manager
         for (let section of all_main_section) {
             
-            // Display type manager
             if (args.includes(section.id)) {
 
                 if (
@@ -49,9 +49,6 @@
         // Menu reset on page switch
         closeMenu()
 
-        // Search Reset
-        searchReset(args)
-
         // Order options manager
         if (args.includes('all_store_page')) {
             document.getElementById('price_ascending').style.display = 'none'
@@ -66,6 +63,9 @@
             document.getElementById('actions').style.display = 'none'
         } else {
             document.getElementById('actions').style.display = 'flex'
+
+            // Search Reset
+            searchReset(args)
         }
 
         // Scroll reset
@@ -103,7 +103,11 @@
             
         // 
 
+        // Clears the Searchbar
         searchbar.value = ""
+        
+        // Removes the no-items-found section if it was active
+        noItemsFound(1)
     }
 
 // 

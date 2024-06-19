@@ -1,14 +1,11 @@
 PAGE
 
-    - filters -> price range, units range
-    - order -> price, amount, name
+    - filters -> price range, units range (is it really useful??)
 
     - organize section
 
     - style all page
         - make a way to have border-radius on book covers
-
-    - style no-items-found
 
     - adjust items templates on create_item.js
         - remove wrappers
@@ -17,10 +14,6 @@ PAGE
 
 
 ISSUES
-
-    - When searching on a book page or store page, if the search has an existing item, not necessarily on the store/book page, the not-found section does not appear
-
-    - when no items are found, display:none the container
 
 
 

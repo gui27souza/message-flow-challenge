@@ -158,7 +158,7 @@
     <!-- Homepage Section -->
     <!-- Has all stores  -->
     <section 
-        class="store-container main_section main_section_order" 
+        class="store-container main_section main_section_container" 
         id="all_store_page"
     ></section>
 
@@ -168,7 +168,7 @@
     <!-- Books Section -->
     <!-- Has all books -->
     <section 
-        class="book-container main_section main_section_order" 
+        class="book-container main_section main_section_container" 
         id="all_book_page" 
         style="display: none;"
     ></section>
@@ -179,7 +179,7 @@
     <!-- Store Specific Section -->
     <!-- Has a Specific Store and all its books  -->
     <section 
-        class="store main_section" 
+        class="store main_section main_section_header" 
         id="store_page_header" 
         style="display: none;"
     >
@@ -202,7 +202,7 @@
 
     </section>
     <section 
-        class="book-container main_section main_section_order" 
+        class="book-container main_section main_section_container" 
         id="store_page"
         style="display: none;"
     ></section>
@@ -213,7 +213,7 @@
     <!-- Book Specific Section -->
     <!-- Has a Specific Book and all stores that contains it -->
     <section
-        class="book-page-container main_section"
+        class="book-page-container main_section main_section_header"
         id="book_page_header"
         style="display: none;"
     >
@@ -241,7 +241,7 @@
 
     </section>
     <section 
-        class="store-container store-container__book-page main_section main_section_order" 
+        class="store-container store-container__book-page main_section main_section_container" 
         id="book_page"
         style="display: none;"
     ></section>
@@ -280,7 +280,7 @@
     <!-- Contact Section -->
     <!-- Information about Contact -->
     <section 
-        class="contact__container main_section main_section_order"
+        class="contact__container main_section"
         id="contact_page"
         style="display: none;"
     >
@@ -345,12 +345,55 @@
 
     <script>
 
+
         var order_type = 'store'
+
+
+        // --------------------
+
 
         // Simple function to help page switch
         function openLink(url) {
             window.location.href = url;
         }
+
+
+        // -----------------------------------
+
+
+        // Gets all the main section containers
+        const mainSections = document.querySelectorAll('.main_section_container')
+
+        // Finds the section that doesn't have a display: none
+        function findVisibleContainer() {
+            let visible_section = null
+            for (let section of mainSections) {
+                if (window.getComputedStyle(section).display !== 'none') {
+                    visible_section = section
+                    break 
+                }
+            }
+
+            return visible_section
+        }
+
+        // Gets all the main section containers
+        const mainHeaders = document.querySelectorAll('.main_section_header')
+
+        // Finds the section that doesn't have a display: none
+        function findVisibleHeader() {
+            let visible_header = null
+            for (let section of mainHeaders) {
+                if (window.getComputedStyle(section).display !== 'none') {
+                    visible_header = section
+                    break 
+                }
+            }
+
+            return visible_header
+        }
+
+        
     </script>
 </body>
 </html>

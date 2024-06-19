@@ -1,16 +1,7 @@
 function order(type, ordenation) {
 
-    // Gets all the main section containers that has items to be ordered
-    const mainSections = document.querySelectorAll('.main_section_order')
-
     // Finds the section that doesn't have a display: none
-    let visible_section = null
-    for (let section of mainSections) {
-        if (window.getComputedStyle(section).display !== 'none') {
-            visible_section = section
-            break 
-        }
-    }
+    let visible_section = findVisibleContainer()
 
     // Gets all the store or book items
     var all_items = Array.from(visible_section.getElementsByClassName(`container-item-${type}`))

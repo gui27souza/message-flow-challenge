@@ -26,6 +26,9 @@
 
         // Puts the amount of books in the HTML
         document.getElementById('store__text__description__store-amount').innerHTML = store_amount + ' Books'
+
+        // Resets the avaiable items for search
+        all_item_wrappers_book =  document.getElementById('store_page').getElementsByClassName('book-container__wrapper')
     }
 
 //
@@ -49,6 +52,9 @@
                 }
             })
         })
+        
+        // Resets the avaiable items for search
+        all_item_wrappers_store =  document.getElementById('book_page').getElementsByClassName('store-container__wrapper')
     }
 
 // 

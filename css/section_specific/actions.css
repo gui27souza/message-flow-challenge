@@ -85,21 +85,26 @@
 .no-items-found {
     display: none;
     
-    width: 90%;
+    width: var(--main-width);
     
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: var(--container-padding);
+    
+    border-radius: 0 0 .5rem .5rem;
 }
 
 .no-items-found p {
-    font-size: 5rem;
+    font-size: 2rem;
 
-    padding: 1rem;
+    padding: var(--item-padding);
+
+    border-radius: .5rem;
 }
 
 @media screen 
 and (min-width: 300px) {
-    
+    .no-items-found p {
+        font-size: calc(2rem + 1vw);
+    }
 }
 
 @media screen 
@@ -114,10 +119,17 @@ and (min-width: 400px) {
     .actions__buttons__btn {
         font-size: 2.4rem;
     }
+
+    .no-items-found p {
+        font-size: 3.6rem;
+    }
 }
 
 @media screen 
 and (min-width: 600px) {
+    .no-items-found p {
+        font-size: 5rem;
+    }
 }
 
 @media screen 
