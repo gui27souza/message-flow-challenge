@@ -1,29 +1,3 @@
-/* About Colors */
-
-    .about__container {
-        background-color: var(--brown-red);
-
-        border-radius: .5rem;
-    }
-
-    .about__img {
-        background-image: 
-            linear-gradient(140deg, var(--dark-red) 60%, var(--main-red))
-        ;
-
-        border-radius: .5rem;
-    }
-
-    .about__content {
-        background-image: 
-            linear-gradient(120deg, var(--main-red) 60%, var(--red-white))
-        ;
-
-        border-radius: .5rem;
-    }
-
-/*  */
-
 .about__container {
     width: var(--main-width);
 
@@ -34,6 +8,8 @@
     display: flex;
     flex-flow: column;
     gap: var(--container-gap);
+
+    border-radius: .5rem;
 }
 
 .about__img {
@@ -47,6 +23,8 @@
     align-items: center;
 
     gap: var(--inner-gap);
+
+    border-radius: .5rem;
 }
 
 .about__img__text {
@@ -68,6 +46,8 @@
     flex-flow: column;
 
     gap: var(--item-gap);
+
+    border-radius: .5rem;
 }
 
 .about__content__title {

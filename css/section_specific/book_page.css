@@ -1,39 +1,3 @@
-/* Book Page Colors */
-
-    .store-container__book-page {
-        background-color: var(--brown-red);
-    }
-
-    .store-item__book-page {
-        background-color: var(--dark-red);
-    }
-
-    .book-page-container {
-        background-color: var(--brown-red);
-    }
-
-    .book-info {
-        background-color: var(--dark-red);
-
-        border-radius: .5rem;
-    }
-
-    .book__cover {
-        background-color: var(--main-red);
-
-        border-radius: .5rem;
-    }
-
-
-    .book__name,
-    .book__description {
-        background-color: var(--main-red);
-
-        border-radius: .5rem;
-    }
-
-/*  */
-
 .book-page-container {
     width: var(--main-width);
 
@@ -52,11 +16,15 @@
     flex-flow: column;
 
     gap: var(--item-gap);
+
+    border-radius: .5rem;
 }
 
 .book__cover {
     object-fit: contain;
     padding: var(--item-padding);
+
+    border-radius: .5rem;
 }
 
 .book__text {
@@ -73,6 +41,8 @@
     padding: var(--inner-padding);
 
     display: flex;
+    
+    border-radius: .5rem;
 }
 
 .book__name {
