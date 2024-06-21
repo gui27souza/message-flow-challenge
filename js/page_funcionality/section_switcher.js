@@ -70,6 +70,10 @@
 
         // Scroll reset
         window.scrollTo(0, 0)
+
+        // Order select reset
+        var select = document.getElementById("order");
+        select.selectedIndex = 0
     }
 
 // 
