@@ -8,7 +8,7 @@
         // Cleans the section and give Store Name
         document.getElementById('store_page').innerHTML = ''
         document.getElementById('store__text__name__store-name').innerHTML = store.name
-        document.getElementById('store-logo').setAttribute('src', `images/Store Logos/${store_name}.svg`)
+        document.getElementById('store-logo').setAttribute('src', `/public/images/Store Logos/${store_name}.svg`)
 
         // Creates the Book Item, with name, price, amount and id, also counts how many differents book are in the store
         var store_amount = 0
@@ -42,7 +42,7 @@
         // Cleans the section and give Book Name and Book Cover
         document.getElementById('book_page').innerHTML = ''
         document.getElementById('book-name').innerHTML = book_name
-        document.getElementById('book-cover').setAttribute('src', `images/Book Covers/${book_id}.png`)
+        document.getElementById('book-cover').setAttribute('src', `/public/images/Book Covers/${book_id}.png`)
 
         // Displays all the Stores with this book
         data.forEach(store => {
