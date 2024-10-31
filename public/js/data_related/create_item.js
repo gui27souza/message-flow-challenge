@@ -18,7 +18,7 @@
         store_element.innerHTML = `
             <div class="store-item"
                 onclick="sectionSwitcher('store_page', 'store_page_header'); openStore('${store_name}')">
-                    <img src="/public/images/Store Logos/${store_name}.svg" alt="" class="store-item__logo">
+                    <img src="message-flow-challenge/public/images/Store Logos/${store_name}.svg" alt="" class="store-item__logo">
                     <div class="store-item__text">
                         <div class="store-item__text__name">
                             <span>
@@ -67,7 +67,7 @@
         book_element.innerHTML = `
             <div class="book-item" onclick="sectionSwitcher('book_page', 'book_page_header'); openBook('${name}', '${id}')">
 
-                <img src="/public/images/Book Covers/${id}.png" alt="" class="book-item__logo">
+                <img src="message-flow-challenge/public/images/Book Covers/${id}.png" alt="" class="book-item__logo">
                 
                 <div class="book-item__text">
                     <div class="book-item__text__name book-item__text__item">
