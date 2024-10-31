@@ -1,0 +1,237 @@
+body {
+    background-color: var(--main-color);
+}
+
+.change-theme {
+    background-color: var(--main-red);
+}
+
+/* Header */
+
+    .header {
+        background-color: var(--dark-black);
+    }
+
+    .header__menu__item a {
+        background-color: var(--main-red);
+        color: var(--brown-red);
+
+        transition: background-color .15s ease, color .15s ease, filter .15s ease;
+    }
+
+    @media screen
+    and (min-width: 900px) {
+        
+        .header__menu__item a:hover {
+            background-color: var(--third-red);
+            color: var(--main-white);
+
+            filter: drop-shadow(0 0 .3rem var(--third-red));
+        }
+
+    }
+
+/**/
+
+
+/* Actions */
+
+    .actions {
+        background-color: var(--light-color);
+    }
+
+    .searchbar {
+        background-color: var(--dark-color);
+        color: var(--light-text);
+    }
+
+    .searchbar::placeholder {
+        color: #b8b2b1;
+    }
+
+    .actions__buttons__btn {
+        background-color: var(--dark-color);
+        color: var(--light-text);
+    }
+
+    .no-items-found {
+        background-color: var(--light-color);
+    }
+
+    .no-items-found p {
+        background-color: var(--dark-color);
+
+        color: var(--light-text);
+    }
+
+/**/
+
+
+/* Book Container */
+
+    .book-container {
+        background-color: var(--light-color);
+    }
+
+    .book-item {
+        background-color: var(--dark-color);
+        transition: transform ease .15s, filter ease .15s;
+    }
+
+    .book-item:hover {
+        cursor: pointer;
+
+        transform: scale(1.05);
+
+        filter: drop-shadow(0 0 1rem var(--dark-red));
+    }
+
+    .book-item__logo,
+    .book-item__text__item {
+        background-color: var(--main-color);
+        color: var(--light-text);
+    }
+
+/**/
+
+
+
+/* Store Container */
+
+    .store-container {
+        background-color: var(--light-color);
+    }
+
+    .store-item {
+        background-color: var(--dark-color);
+        transition: transform ease .15s, filter ease .15s;
+    }
+
+    .store-item:hover {
+        cursor: pointer;
+
+        transform: scale(1.05);
+
+        filter: drop-shadow(0 0 1rem var(--dark-red));
+    }
+
+
+    .store-item__logo {
+        background-image: 
+            linear-gradient(140deg, var(--dark-red), var(--main-color) 40%)
+        ;
+    }
+
+    .store-item__text__name,
+    .store-item__text__amount,
+    .store-item__text__price {
+        background-color: var(--main-color);
+        color: var(--light-text);
+    }
+
+/**/
+
+
+
+/* Book Page */
+
+    .store-container__book-page {
+        background-color: var(--light-color);
+    }
+
+    .store-item__book-page {
+        background-color: var(--dark-red);
+    }
+
+    .book-page-container {
+        background-color: var(--light-color);
+    }
+
+    .book-info {
+        background-color: var(--dark-color);
+    }
+
+    .book__cover {
+        background-color: var(--main-color);
+    }
+
+
+    .book__name,
+    .book__description {
+        background-color: var(--main-color);
+        color: var(--light-text);
+    }
+
+/**/
+
+
+
+/* Store Page */
+
+    .store {
+        background-color: var(--light-color);
+    }
+
+    .store__logo {
+        background-image: 
+        linear-gradient(140deg, var(--dark-red), var(--dark-color) 40%)
+        ;
+    }
+
+    .store__text__name,
+    .store__text__description {
+        background-color: var(--dark-color);
+        color: var(--light-text);
+    }
+
+/**/
+
+
+/* Contact */
+
+    .contact__container {
+        background-color: var(--dark-color);
+        color: var(--dark-text);
+    }
+
+    .contact__text a {
+        color: var(--brown-red);
+        text-decoration: underline 3px var(--second-red);
+        font-weight: 600;
+    }
+
+    .contact__text {
+        background-color: var(--light-color);
+    }
+
+    .contact__container h1 {
+        background-image: 
+            linear-gradient(-40deg, var(--dark-red) 60%, var(--third-red));
+        color: var(--main-white);
+    }
+
+/**/
+
+
+/* About */
+
+    .about__container {
+        background-color: var(--dark-color);
+    }
+
+    .about__img {
+        background-image: 
+            linear-gradient(140deg, var(--dark-red) 60%, var(--light-color))
+        ;
+    }
+
+    .about__content {
+        /* background-image: 
+            linear-gradient(120deg, var(--light-color) 60%, var(--light-color))
+        ; */
+
+        background-color: var(--light-color);
+        color: var(--dark-text);
+    }
+
+/**/

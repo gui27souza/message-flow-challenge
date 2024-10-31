@@ -1,0 +1,178 @@
+.store-container {
+    width: var(--main-width);
+
+    margin-bottom: 2rem;
+
+    padding: var(--container-padding);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--container-gap);
+
+    border-radius: .5rem;
+}
+
+.store-item {
+    width: 100%;
+    height: 12rem;
+
+    display: flex;
+    gap: var(--item-gap);
+
+    padding: var(--item-padding);
+
+    border-radius: .5rem;
+}
+
+.store-item__logo {
+    display: none;
+
+    border-radius: .5rem;
+}
+
+.store-item__text {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--inner-gap);
+}
+
+.store-item__text > * {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.8rem;
+
+    border-radius: .5rem;
+}
+
+.store-item__text__name {
+    font-weight: 600;
+}
+
+@media screen
+and (min-width: 300px) {
+
+    .store-item {
+        flex-flow: row;
+        height: 12rem;
+    }
+
+    .store-item__logo {
+        display: block;
+        height: 100%;
+    }
+
+    .store-item__text {
+        width: 100%;
+    }
+
+    .store-item__text > * {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen
+and (min-width: 400px) {
+
+    .store-item {
+        height: 16rem;
+    }
+
+    .store-item__text > * {
+        font-size: 2rem;
+    }
+}
+
+@media screen
+and (min-width: 600px) {
+
+    .store-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: unset;
+        gap: var(--container-gap);
+    }
+
+    .store-container__wrapper {
+        width: 100%;
+        display: flex;
+
+    }
+
+    .store-item {
+        flex-flow: column;
+
+        height: unset;
+        width: unset;
+    }
+
+    .store-item__text > * {
+        height: 3.4rem;
+
+        font-size: calc(1.8rem + .25vw);
+    }
+
+    .store-item__logo {
+        width: 100%;
+    }
+}
+
+@media screen
+and (min-width: 900px) {
+    .store-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .store-item__text > * {
+        height: 4rem;
+    }
+}
+
+@media screen
+and (min-width: 1200px) {
+    .store-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .store-item__text__name,
+    .store-item__text__amount {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen
+and (min-width: 1500px) {
+
+    .store-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .store-item {
+        width: 100%;
+        flex-flow: row;
+    }
+
+    .store-item__logo {
+        width: 40%;
+        aspect-ratio: 1;
+    }
+
+    .store-item__text > * {
+        height: 100%;
+    }
+
+    .store-item__text__name {
+        font-weight: 600;
+    }
+
+}

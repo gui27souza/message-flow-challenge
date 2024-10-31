@@ -1,0 +1,166 @@
+.about__container {
+    width: var(--main-width);
+
+    padding: var(--container-padding);
+
+    margin: var(--margin);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--container-gap);
+
+    border-radius: .5rem;
+}
+
+.about__img {
+    width: 100%;
+    height: 10.6rem;
+
+    padding: var(--item-padding);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: var(--inner-gap);
+
+    border-radius: .5rem;
+}
+
+.about__img__text {
+    object-fit: contain;
+    height: 100%;
+    width: 80%;
+}
+
+.about__img__logo {
+    object-fit: contain;
+    height: 100%;
+    width: 20%;
+}
+
+.about__content {
+    padding: var(--item-padding);
+
+    display: flex;
+    flex-flow: column;
+
+    gap: var(--item-gap);
+
+    border-radius: .5rem;
+}
+
+.about__content__title {
+    font-size: 1.8rem;
+
+    font-weight: 500;
+}
+
+.about__content__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+
+@media screen
+and (min-width: 300px) {
+
+}
+
+@media screen
+and (min-width: 400px) {
+    
+    .about__img__text {
+        width: unset;
+        height: 5rem;
+    }
+    
+    .about__img__logo {
+        width: unset;
+        height: 100%;
+    }
+
+    .about__content__title {
+        font-size: 2.2rem;
+    }
+    
+    .about__content__text {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen
+and (min-width: 600px) {
+    .about__img__text {
+        height: 6.4rem;
+    }
+    
+    .about__content__title {
+        font-size: 2.8rem;
+    }
+    
+    .about__content__text {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen
+and (min-width: 900px) {
+
+    .about__img {
+        height: 12rem;
+    }
+
+    .about__img__text {
+        height: 7rem;
+    }
+    
+    .about__content__title {
+        font-size: 3.2rem;
+    }
+    
+    .about__content__text {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen
+and (min-width: 1200px) {
+    .about__img {
+        height: 14rem;
+    }
+
+    .about__img__text {
+        height: 8.4rem;
+    }
+
+    .about__content__title {
+        font-size: 3.2rem;
+    }
+    
+    .about__content__text {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen
+and (min-width: 1500px) {
+
+    .about__img {
+        height: 16rem;
+    }
+
+    .about__img__text {
+        height: 10rem;
+    }
+    
+    .about__content__title {
+        font-size: 4.2rem;
+        text-align: center;
+    }
+    
+    .about__content__text {
+        font-size: 3.2rem;
+    }
+
+}
